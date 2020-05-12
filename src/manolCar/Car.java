@@ -1,30 +1,17 @@
 package manolCar;
 
 public abstract class Car implements Comparable<Car> {
-    public int horsePower;
-    private String model;
-    public Car(){
-        horsePower = 0;
-        model = "default";
+    private String brand;
+    private int price;
+    private String VIN;
+    public String getBrand(){
+        return brand;
     }
-    public Car(int horsePower, String model){
-        this.horsePower = horsePower;
-        this.model = model;
+    public int getPrice(){
+        return price;
     }
-    public String getModel(){
-        return model;
-    }
-    public int getHorsePower(){
-        return horsePower;
-    }
-    @Override
-    public String toString(){
-        return "This is " + model + " and has " + horsePower;
-    }
-    public abstract void drive();
-    @Override
-    public int compareTo(Car c1){
-        return this.getModel().compareTo(c1.getModel());
+    public String getVIN(){
+        return  VIN;
     }
     @Override
     public boolean equals(Object c){
@@ -37,7 +24,7 @@ public abstract class Car implements Comparable<Car> {
         if(c.getClass() != this.getClass()) {
             return false;
         }
-        if(((Car)c).getHorsePower() == this.getHorsePower() && ((Car)c).getModel().equals(this.getModel())) {
+        if(((Car)c).getVIN() == this.getVIN() ) {
             return true;
         }
         return false;

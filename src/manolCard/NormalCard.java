@@ -2,11 +2,17 @@ package manolCard;
 
 public class NormalCard extends Card implements AddablePoints {
 
-    NormalCard(){
+    public NormalCard(){
+        id = Card.id++;
         points = 20;
     }
-    NormalCard(int points){
+    public NormalCard(int points){
+        id = Card.id++;
         setPoints(points);
+    }
+    public NormalCard(NormalCard card){
+        id = Card.id++;
+        points = card.points;
     }
     @Override
     public void addPoints() {

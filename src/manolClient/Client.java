@@ -3,12 +3,22 @@ package manolClient;
 import manolCar.Car;
 import manolCard.Card;
 
-public class Client implements Comparable<Client>  {
+public abstract class Client implements Comparable<Client>  {
     private String name;
     private String surname;
     private Card card;
-    void drive(Car car){
-        System.out.println(this.toString()+ " can drive " + car.toString() + "for " + card.getPoints() + " minutes" );
+    public Client(){
+        name = "default";
+        surname = "default";
+    }
+    public Client(String name, String surname){
+        this.name = name;
+        this.surname = surname;
+    }
+    public abstract void buyCar(Car car);
+
+    public void setCard(Card card) {
+        this.card = card;
     }
     @Override
     public String toString(){
