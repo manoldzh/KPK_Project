@@ -10,6 +10,7 @@ public abstract class Car implements Comparable<Car> {
     public int getPrice(){
         return price;
     }
+    public abstract void drive();
     public String getVIN(){
         return  VIN;
     }

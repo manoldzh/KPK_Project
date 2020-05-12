@@ -16,6 +16,7 @@ public abstract class Client implements Comparable<Client>  {
         this.surname = surname;
     }
     public abstract void buyCar(Car car);
+    public abstract void drive (Car car);
 
     public void setCard(Card card) {
         this.card = card;

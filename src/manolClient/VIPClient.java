@@ -13,4 +13,10 @@ public class VIPClient extends Client {
         int PriceForThisClient = car.getPrice() * ( 90 - getPoints()/40)/100;
         System.out.print( toString() + " buy " + car.toString() + " for " + PriceForThisClient);
     }
+    @Override
+    public void drive(Car car){
+        car.drive();
+        int minutesDriving = getPoints() + 20;
+        System.out.println(toString() + " can drive the car " + car.toString() + "for " + minutesDriving + " minutes");
+    }
 }

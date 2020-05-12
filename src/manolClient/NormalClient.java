@@ -10,7 +10,12 @@ public class NormalClient extends Client {
     }
     @Override
     public void buyCar(Car car){
-        int PriceForThisClient = car.getPrice()*(95-getPoints()/20)/100;
+        int PriceForThisClient = car.getPrice()*(90-getPoints()/20)/100;
         System.out.print( toString() + " buy " + car.toString() + " for " + PriceForThisClient);
+    }
+    public void drive(Car car){
+        car.drive();
+        int minutesDriving = getPoints() + 15;
+        System.out.println(toString() + " can drive the car " + car.toString() + "for " + minutesDriving + " minutes");
     }
 }
