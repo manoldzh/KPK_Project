@@ -1,9 +1,9 @@
 package manolCard;
 
-public class NormalCard implements AddablePoints {
-    private int points;
+public class NormalCard extends Card implements AddablePoints {
+
     NormalCard(){
-        points = 0;
+        points = 20;
     }
     NormalCard(int points){
         setPoints(points);
@@ -12,9 +12,10 @@ public class NormalCard implements AddablePoints {
     public void addPoints() {
         setPoints(++this.points);
     }
-    private void setPoints(int points){
+    @Override
+    public void setPoints(int points){
         if(points<0){
-            this.points = 0;
+            this.points = 20;
         }else {
             if(points>40){
                 this.points = 40;
@@ -23,4 +24,5 @@ public class NormalCard implements AddablePoints {
             }
         }
     }
+
 }

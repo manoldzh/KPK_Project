@@ -1,9 +1,9 @@
 package manolCard;
 
-public class VIPCard implements AddablePoints {
-    private int points;
+public class VIPCard extends Card implements AddablePoints {
+
     VIPCard(){
-        points = 0;
+        points = 30;
     }
     VIPCard(int points){
         setPoints(points);
@@ -13,9 +13,10 @@ public class VIPCard implements AddablePoints {
         int temporaryPoints = points + 2;
         setPoints(temporaryPoints);
     }
-    private void setPoints(int points){
+    @Override
+    public void setPoints(int points){
         if(points<0){
-            this.points = 0;
+            this.points = 30;
         }else {
             if(points>100){
                 this.points = 100;
@@ -24,4 +25,5 @@ public class VIPCard implements AddablePoints {
             }
         }
     }
+
 }
