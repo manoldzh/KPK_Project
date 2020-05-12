@@ -6,5 +6,5 @@ public abstract class Card {
     abstract public void setPoints(int points);
     public int getPoints(){
         return points;
-    };
+    }
 }

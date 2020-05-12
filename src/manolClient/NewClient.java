@@ -15,7 +15,7 @@ public class NewClient extends  Client {
     @Override
     public void drive(Car car){
         car.drive();
-        int minutesDriving = getPoints() +5;
-        System.out.println(toString() + " can drive the car " + car.toString() + "for " + minutesDriving + " minutes");
+        int minutesOfDriving = getPoints() + 5;
+        System.out.println(toString() + " can drive the car " + car.toString() + " for " + minutesOfDriving + " minutes");
     }
 }
