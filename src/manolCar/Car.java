@@ -19,7 +19,7 @@ public abstract class Car implements Comparable<Car> {
     }
     @Override
     public String toString(){
-        return "This is " + model + " and has " + horsePower + horsePower;
+        return "This is " + model + " and has " + horsePower;
     }
     public abstract void drive();
     @Override
