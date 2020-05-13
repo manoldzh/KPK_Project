@@ -11,15 +11,19 @@ public class NormalClient extends Client {
         super(name,surname);
         this.setCard(new NormalCard());
     }
-    @Override
-    public double priceForCar(Car car){
+
+    private double makeDiscount(){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
-        double priceForCar = car.getPrice()*( 100 - discount)/100;
+        return discount;
+    }
+    @Override
+    public double makePriceForCar(Car car){
+        double priceForCar = car.getPrice()*( 100 - makeDiscount())/100;
         return priceForCar;
     }
     @Override
     public void buyCar(Car car){
-        System.out.print( toString() + " buy " + car.toString() + " for " + priceForCar(car));
+        System.out.print( toString() + " buy " + car.toString() + " for " + makePriceForCar(car));
     }
     public void drive(Car car){
         String drivingCar = car.drive();

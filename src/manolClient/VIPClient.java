@@ -11,15 +11,19 @@ public class VIPClient extends Client {
         super(name,surname);
         setCard(new VIPCard());
     }
-    @Override
-    public double priceForCar(Car car){
+    private double makeDiscount(){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
-        double priceForThisClient = car.getPrice() * ( 100 - discount)/100;
+        return discount;
+    }
+    @Override
+    public double makePriceForCar(Car car){
+
+        double priceForThisClient = car.getPrice() * ( 100 - makeDiscount())/100;
         return priceForThisClient;
     }
     @Override
     public void buyCar(Car car){
-        System.out.print( toString() + " buy " + car.toString() + " for " + priceForCar(car));
+        System.out.print( toString() + " buy " + car.toString() + " for " + makePriceForCar(car));
     }
     @Override
     public void drive(Car car){
