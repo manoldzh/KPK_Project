@@ -18,7 +18,7 @@ public class SeniorSalesManager extends  Employee{
     }
     @Override
     public double calculateCommission(Car car, Client client){
-        double valueOfCommission = client.makePriceForCar(car)*(PERCENT_OF_COMMISSION + calculateAddedPercents());
+        double valueOfCommission = client.calculatePriceForCar(car)*(PERCENT_OF_COMMISSION + calculateAddedPercents());
         return valueOfCommission;
     }
 

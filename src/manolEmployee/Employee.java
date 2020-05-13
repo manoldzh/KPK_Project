@@ -28,7 +28,7 @@ public abstract class Employee {
         return name + " " + surname;
     }
     public void sellCar(Car car, Client client) {
-        System.out.println(toString() + " sold " + car.toString() + " to " + client.toString() + " for " + client.makePriceForCar(car) +
+        System.out.println(toString() + " sold " + car.toString() + " to " + client.toString() + " for " + client.calculatePriceForCar(car) +
                 " and get commission " + calculateCommission(car, client));
         soldCars ++;
     }
