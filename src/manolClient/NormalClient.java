@@ -12,10 +12,14 @@ public class NormalClient extends Client {
         this.setCard(new NormalCard());
     }
     @Override
-    public void buyCar(Car car){
+    public double priceForCar(Car car){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
-        double PriceForThisClient = car.getPrice()*( 100 - discount)/100;
-        System.out.print( toString() + " buy " + car.toString() + " for " + PriceForThisClient);
+        double priceForCar = car.getPrice()*( 100 - discount)/100;
+        return priceForCar;
+    }
+    @Override
+    public void buyCar(Car car){
+        System.out.print( toString() + " buy " + car.toString() + " for " + priceForCar(car));
     }
     public void drive(Car car){
         car.drive();

@@ -12,10 +12,14 @@ public class VIPClient extends Client {
         setCard(new VIPCard());
     }
     @Override
-    public void buyCar(Car car){
+    public double priceForCar(Car car){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
-        double PriceForThisClient = car.getPrice() * ( 100 - discount)/100;
-        System.out.print( toString() + " buy " + car.toString() + " for " + PriceForThisClient);
+        double priceForThisClient = car.getPrice() * ( 100 - discount)/100;
+        return priceForThisClient;
+    }
+    @Override
+    public void buyCar(Car car){
+        System.out.print( toString() + " buy " + car.toString() + " for " + priceForCar(car));
     }
     @Override
     public void drive(Car car){

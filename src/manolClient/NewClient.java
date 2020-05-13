@@ -10,8 +10,12 @@ public class NewClient extends  Client {
         setCard(new TrialCard());
     }
     @Override
+    public double priceForCar(Car car){
+        return car.getPrice();
+    }
+    @Override
     public void buyCar(Car car){
-        System.out.print( toString() + " buy " + car.toString() + " for " + car.getPrice());
+        System.out.print( toString() + " buy " + car.toString() + " for " + priceForCar(car));
     }
     @Override
     public void drive(Car car){
