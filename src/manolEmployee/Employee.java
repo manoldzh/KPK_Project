@@ -24,6 +24,9 @@ public abstract class Employee {
     public int getSoldCars(){
         return soldCars;
     }
+    @Override public String toString(){
+        return name + " " + surname;
+    }
     public void sellCar(Car car, Client client) {
         System.out.println(toString() + " sold " + car.toString() + " to " + client.toString() + " for " + client.priceForCar(car) +
                 " and get commission " + commission(car, client));
