@@ -4,6 +4,7 @@ import manolCar.Car;
 import manolCard.TrialCard;
 
 public class NewClient extends  Client {
+    final static int ADDED_MINUTES = 5;
     public NewClient(String name, String surname){
         super(name,surname);
         setCard(new TrialCard());
@@ -15,7 +16,7 @@ public class NewClient extends  Client {
     @Override
     public void drive(Car car){
         car.drive();
-        int minutesOfDriving = getPoints() + 5;
+        int minutesOfDriving = getPoints() + ADDED_MINUTES;
         System.out.println(toString() + " can drive the car " + car.toString() + " for " + minutesOfDriving + " minutes");
     }
 }
