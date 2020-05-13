@@ -4,7 +4,11 @@ public abstract class Car {
     private String brand;
     private String model;
     private int price;
-    private String VIN;
+    private String VIN; // VIN is unique for every car
+    @Override
+    public String toString(){
+        return brand + " " + model + " with VIN: " + VIN + " and price: " + price;
+    }
     public String getBrand(){
         return brand;
     }
@@ -32,7 +36,7 @@ public abstract class Car {
         this.price = price;
         this.VIN = VIN;
     }
-    public abstract void drive();
+    public abstract String drive();
     public String getVIN(){
         return  VIN;
     }

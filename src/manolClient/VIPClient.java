@@ -23,8 +23,8 @@ public class VIPClient extends Client {
     }
     @Override
     public void drive(Car car){
-        car.drive();
+        String drivingCar = car.drive();
         int minutesOfDriving = getPoints() + ADDED_MINUTES;
-        System.out.println(toString() + " can drive the car " + car.toString() + " for " + minutesOfDriving + " minutes");
+        System.out.println(drivingCar + toString() + " can drive the car " + car.toString() + " for " + minutesOfDriving + " minutes");
     }
 }

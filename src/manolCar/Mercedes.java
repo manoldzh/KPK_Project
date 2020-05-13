@@ -11,10 +11,19 @@ public class Mercedes extends Car {
         this.fourMatic = fourMatic;
     }
     @Override
-    public void drive(){
-        System.out.println("The best or nothing...");
+    public String toString(){
         if(fourMatic){
-            System.out.println("You can feel the power of FourMatic");
+            return super.toString() + " and FourMatic";
         }
+        return super.toString();
+    }
+    @Override
+    public String drive(){
+        String result = new String();
+        result += "The best or nothing...\n";
+        if(fourMatic){
+            result += "You can feel the power of FourMatic";
+        }
+        return result;
     }
 }

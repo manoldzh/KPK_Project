@@ -12,10 +12,19 @@ public class Audi extends Car{
 
     }
     @Override
-    public void drive(){
-        System.out.println("Lead by technology...");
+    public String toString(){
         if(allRoad){
-            System.out.println("You can feel the power of allRoad...");
+            return super.toString() + " and AllRoad";
         }
+        return super.toString();
+    }
+    @Override
+    public String drive(){
+        String result = new String();
+        result += "Lead by technology...\n";
+        if(allRoad){
+            result += "You can feel the power of allRoad...";
+        }
+        return result;
     }
 }

@@ -11,10 +11,19 @@ public class BMW extends Car {
         this.mPower = mPower;
     }
     @Override
-    public void drive(){
-        System.out.println("Driving pleasure..");
+    public String toString(){
         if(mPower){
-            System.out.println("You can feel the power of MPower...");
+            return super.toString() + " and MPower";
         }
+        return super.toString();
+    }
+    @Override
+    public String drive(){
+        String result = new String();
+        result += "Driving pleasure...\n";
+        if(mPower){
+            result += "You can feel the power of MPower...";
+        }
+        return result;
     }
 }

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22d5d5e-3900-42e5-9d18-3270c6b9eed3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/manolEmployee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolEmployee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCar/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Audi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCar/BMW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/BMW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCar/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCar/Mercedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Mercedes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/NewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/NewClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/NormalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/NormalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/VIPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/VIPClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,26 +34,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="groovy" value="1" />
-          <entry key="java" value="50" />
+          <entry key="java" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="50" />
+          <entry key="JAVA" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="6676" />
+          <entry key="java" value="8080" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="6676" />
+          <entry key="JAVA" value="8080" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -55,82 +62,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manolCar/Mercedes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/manolEmployee/Employee.java">
+        <entry file="file://$PROJECT_DIR$/src/Test/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolEmployee/ComparatorOfEmployeesByName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="72" lean-forward="true" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolEmployee/ComparatorOfEmployeesBySoldCars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+            <state relative-caret-position="408">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -163,17 +134,9 @@
         <option value="$PROJECT_DIR$/src/manolCard/VIPCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/TrialCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/NormalCard.java" />
-        <option value="$PROJECT_DIR$/src/Test/CarTest.java" />
         <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
         <option value="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/Car.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/Audi.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/BMW.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/Mercedes.java" />
         <option value="$PROJECT_DIR$/src/manolClient/Client.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/VIPClient.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/NewClient.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/NormalClient.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesManager.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesAssistant.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/JuniorSalesManager.java" />
@@ -181,6 +144,14 @@
         <option value="$PROJECT_DIR$/src/manolEmployee/ComparatorOfEmployeesByName.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/ComparatorOfEmployeesBySoldCars.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/Employee.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/Car.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/Mercedes.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/Audi.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/BMW.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/NormalClient.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/VIPClient.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/NewClient.java" />
+        <option value="$PROJECT_DIR$/src/Test/CarTest.java" />
       </list>
     </option>
   </component>
@@ -249,7 +220,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589373245892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589375872151" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -282,7 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CarTest">
     <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
@@ -297,9 +268,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarTest.TestDriveMethodOfAudiWithAllRoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KPK_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CarTest" />
+      <option name="METHOD_NAME" value="TestDriveMethodOfAudiWithAllRoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTest.TestDriveMethodOfAudiWithoutAllRoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KPK_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CarTest" />
+      <option name="METHOD_NAME" value="TestDriveMethodOfAudiWithoutAllRoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTest.TestDriveMethodOfMercedesWithFourMatic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KPK_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CarTest" />
+      <option name="METHOD_NAME" value="TestDriveMethodOfMercedesWithFourMatic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTest.TestDriveMethodOfMercedesWithoutFourMatic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KPK_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CarTest" />
+      <option name="METHOD_NAME" value="TestDriveMethodOfMercedesWithoutFourMatic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CarTest.TestDriveMethodOfAudiWithAllRoad" />
+      <item itemvalue="JUnit.CarTest.TestDriveMethodOfAudiWithoutAllRoad" />
+      <item itemvalue="JUnit.CarTest.TestDriveMethodOfMercedesWithFourMatic" />
+      <item itemvalue="JUnit.CarTest.TestDriveMethodOfMercedesWithoutFourMatic" />
+      <item itemvalue="JUnit.CarTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CarTest" />
+        <item itemvalue="JUnit.CarTest.TestDriveMethodOfMercedesWithoutFourMatic" />
+        <item itemvalue="JUnit.CarTest.TestDriveMethodOfMercedesWithFourMatic" />
+        <item itemvalue="JUnit.CarTest.TestDriveMethodOfAudiWithoutAllRoad" />
+        <item itemvalue="JUnit.CarTest.TestDriveMethodOfAudiWithAllRoad" />
       </list>
     </recent_temporary>
   </component>
@@ -317,36 +363,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarTest - 2020.05.11 at 20h 30m 26s.xml">
+    <history-entry file="CarTest_TestBMWToStringMethodWithMPower - 2020.05.13 at 15h 56m 44s.xml">
+      <configuration name="CarTest.TestBMWToStringMethodWithMPower" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest_TestBMWToStringMethodWithoutMPower - 2020.05.13 at 15h 56m 47s.xml">
+      <configuration name="CarTest.TestBMWToStringMethodWithoutMPower" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest_TestBMWToStringMethodWithoutMPower - 2020.05.13 at 15h 57m 03s.xml">
+      <configuration name="CarTest.TestBMWToStringMethodWithoutMPower" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest_TestBMWToStringMethodWithoutMPower - 2020.05.13 at 15h 58m 40s.xml">
+      <configuration name="CarTest.TestBMWToStringMethodWithoutMPower" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest - 2020.05.13 at 15h 58m 53s.xml">
       <configuration name="CarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest - 2020.05.11 at 20h 30m 36s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
+    <history-entry file="CarTest_TestDriveMethodOfBMWWithMPower - 2020.05.13 at 16h 12m 24s.xml">
+      <configuration name="CarTest.TestDriveMethodOfBMWWithMPower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest - 2020.05.11 at 20h 30m 41s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
+    <history-entry file="CarTest_TestDriveMethodOfBMWWithoutMPower - 2020.05.13 at 16h 12m 47s.xml">
+      <configuration name="CarTest.TestDriveMethodOfBMWWithoutMPower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest - 2020.05.11 at 20h 30m 47s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
+    <history-entry file="CarTest_TestDriveMethodOfBMWWithoutMPower - 2020.05.13 at 16h 13m 17s.xml">
+      <configuration name="CarTest.TestDriveMethodOfBMWWithoutMPower" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest - 2020.05.11 at 20h 32m 05s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
+    <history-entry file="CarTest_TestDriveMethodOfAudiWithAllRoad - 2020.05.13 at 16h 15m 36s.xml">
+      <configuration name="CarTest.TestDriveMethodOfAudiWithAllRoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest - 2020.05.11 at 20h 32m 42s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest - 2020.05.12 at 19h 41m 05s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest - 2020.05.12 at 19h 41m 16s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
+    <history-entry file="CarTest_TestDriveMethodOfAudiWithoutAllRoad - 2020.05.13 at 16h 15m 40s.xml">
+      <configuration name="CarTest.TestDriveMethodOfAudiWithoutAllRoad" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,7 +408,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,6 +427,36 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="DB Browser" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -382,13 +464,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/manolCar/CarTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/manolCar/CarTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Test/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCard/AddablePoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -431,90 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/Mercedes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolEmployee/SeniorSalesManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolEmployee/SeniorSalesAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolEmployee/JuniorSalesManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolEmployee/JuniorSalesAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -543,10 +534,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolEmployee/JuniorSalesAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolEmployee/JuniorSalesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolEmployee/SeniorSalesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolEmployee/SeniorSalesAssistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolEmployee/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/Mercedes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/CarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
         </state>
       </provider>
     </entry>
