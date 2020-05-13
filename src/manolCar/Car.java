@@ -1,7 +1,8 @@
 package manolCar;
 
-public abstract class Car  {
+public abstract class Car {
     private String brand;
+    private String model;
     private int price;
     private String VIN;
     public String getBrand(){
@@ -9,6 +10,27 @@ public abstract class Car  {
     }
     public int getPrice(){
         return price;
+    }
+    public String getModel(){
+        return  model;
+    }
+    public Car(){
+        brand = "default";
+        model = "default";
+        price = 0;
+        VIN = "default";
+    }
+    public Car(String brand){
+        this.brand = brand;
+        model = "default";
+        price = 0;
+        VIN = "default";
+    }
+    public Car(String brand, String model, int price, String VIN){
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+        this.VIN = VIN;
     }
     public abstract void drive();
     public String getVIN(){
