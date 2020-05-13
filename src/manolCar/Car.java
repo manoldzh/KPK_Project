@@ -1,6 +1,6 @@
 package manolCar;
 
-public abstract class Car implements Comparable<Car> {
+public abstract class Car  {
     private String brand;
     private int price;
     private String VIN;
