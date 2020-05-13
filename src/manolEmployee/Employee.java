@@ -28,10 +28,10 @@ public abstract class Employee {
         return name + " " + surname;
     }
     public void sellCar(Car car, Client client) {
-        System.out.println(toString() + " sold " + car.toString() + " to " + client.toString() + " for " + client.priceForCar(car) +
-                " and get commission " + commission(car, client));
+        System.out.println(toString() + " sold " + car.toString() + " to " + client.toString() + " for " + client.makePriceForCar(car) +
+                " and get commission " + calculateCommission(car, client));
         soldCars ++;
     }
 
-    abstract double commission(Car car, Client client);
+    abstract public double calculateCommission(Car car, Client client);
 }
