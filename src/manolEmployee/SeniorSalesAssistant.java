@@ -12,7 +12,8 @@ public class SeniorSalesAssistant extends Employee {
     public SeniorSalesAssistant(String name, String surname, int salary){
         super(name, surname, salary);
     }
-    private double calculateAddedPercents(){
+    @Override
+    public double calculateAddedPercents(){
         double addedPercents = getSoldCars()/DIVIDER_OF_SOLD_CARS;
         return addedPercents;
     }

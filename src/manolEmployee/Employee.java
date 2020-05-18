@@ -34,4 +34,5 @@ public abstract class Employee {
     }
 
     abstract public double calculateCommission(Car car, Client client);
+    abstract public double calculateAddedPercents();
 }
