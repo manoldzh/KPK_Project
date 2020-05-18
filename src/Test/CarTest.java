@@ -1,11 +1,12 @@
 package Test;
 
-import manolCar.Audi;
-import manolCar.BMW;
-import manolCar.Car;
-import manolCar.Mercedes;
+import manolCar.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CarTest {
     @Test
@@ -98,5 +99,27 @@ public class CarTest {
         Assertions.assertEquals("The best or nothing...\n", mercedes.drive());
     }
 
+    @Test
+    public void testComparatorOfCarsByBrand(){
+        Audi audi = new Audi("e220",10000, "123" , false);
+        Car mercedes = new Mercedes("e220",10000, "123" , false);
+        List<Car> cars = new ArrayList<>();
+        cars.add(mercedes);
+        cars.add(audi);
+        ComparatorOfCarsByBrand comparator = new ComparatorOfCarsByBrand();
+        Collections.sort(cars,comparator);
+        Assertions.assertEquals("Lead by technology...\n", cars.get(0).drive());
+    }
+    @Test
+    public void testComparatorOfCarsByPrice(){
+        Audi audi = new Audi("e220",10000, "123" , false);
+        Car mercedes = new Mercedes("e220",12000, "123" , false);
+        List<Car> cars = new ArrayList<>();
+        cars.add(mercedes);
+        cars.add(audi);
+        ComparatorOfCarsByBrand comparator = new ComparatorOfCarsByBrand();
+        Collections.sort(cars,comparator);
+        Assertions.assertEquals("Lead by technology...\n", cars.get(0).drive());
+    }
 }
 

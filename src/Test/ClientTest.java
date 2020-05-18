@@ -6,10 +6,9 @@ import manolClient.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 public class ClientTest {
     @Test
@@ -65,5 +64,21 @@ public class ClientTest {
         Assertions.assertEquals(50,((VIPClient) client).calculateMinutesOfDriving());
     }
 
-    
+    @Test
+    public void testComparatorOfClientsByPoints(){
+        List<Client> clients = new ArrayList<Client>();
+        clients.add(new VIPClient("georgi", "georgiev"));
+        clients.add(new NormalClient("ivan" , "ivanov"));
+        ComparatorOfClientsByPoints comparator = new ComparatorOfClientsByPoints();
+        Collections.sort(clients, comparator);
+        Assertions.assertEquals("ivan ivanov", clients.get(0).toString());
+    }
+    @Test
+    public void testCompareToOfClient(){
+        List<Client> clients = new ArrayList<Client>();
+        clients.add(new NormalClient("ivan" , "ivanov"));
+        clients.add(new VIPClient("georgi", "georgiev"));
+        Collections.sort(clients);
+        Assertions.assertEquals("georgi georgiev", clients.get(0).toString());
+    }
 }
