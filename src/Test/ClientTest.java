@@ -2,12 +2,14 @@ package Test;
 
 import manolCar.BMW;
 import manolCar.Car;
-import manolClient.Client;
-import manolClient.NewClient;
-import manolClient.NormalClient;
-import manolClient.VIPClient;
+import manolClient.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ClientTest {
     @Test
@@ -62,4 +64,6 @@ public class ClientTest {
         Client client = new VIPClient("Ivan", "Ivanov");
         Assertions.assertEquals(50,((VIPClient) client).calculateMinutesOfDriving());
     }
+
+    
 }

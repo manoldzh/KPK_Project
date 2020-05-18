@@ -2,9 +2,9 @@ package manolClient;
 
 import java.util.Comparator;
 
-public class ComparatorOfClientsByPoints implements Comparator<Client> {
+public class ComparatorOfClientsByPoints <T extends Client>implements Comparator<T> {
     @Override
-    public int compare(Client firstClient, Client secondClient){
+    public int compare(T firstClient, T secondClient){
         if(firstClient.getPoints() == secondClient.getPoints()){
             return firstClient.toString().compareTo(secondClient.toString());
         }
