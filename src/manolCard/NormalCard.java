@@ -1,10 +1,13 @@
 package manolCard;
 
 public class NormalCard extends Card implements AddablePoints {
+    private static final int DEFAULT_POINTS = 20;
+    private static final int UPPER_BOUND = 40;
+    private static final int INCREASING_POINTS = 1;
 
     public NormalCard(){
         id = Card.ID++;
-        points = 20;
+        points = DEFAULT_POINTS;
     }
     public NormalCard(int points){
         id = Card.ID++;
@@ -16,15 +19,16 @@ public class NormalCard extends Card implements AddablePoints {
     }
     @Override
     public void addPoints() {
-        setPoints(++this.points);
+        int temporaryPoints = points + INCREASING_POINTS;
+        setPoints(temporaryPoints);
     }
     @Override
     public void setPoints(int points){
         if(points<0){
-            this.points = 20;
+            this.points = DEFAULT_POINTS;
         }else {
-            if(points>40){
-                this.points = 40;
+            if(points>UPPER_BOUND){
+                this.points = UPPER_BOUND;
             }else{
                 this.points = points;
             }

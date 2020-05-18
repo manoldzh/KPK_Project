@@ -1,9 +1,13 @@
 package manolCard;
 
 public class TrialCard extends Card implements AddablePoints {
+    private static final int DEFAULT_POINTS = 5;
+    private static final int UPPER_BOUND = 20;
+    private static final int INCREASING_POINTS = 1;
+
     public TrialCard(){
         id = Card.ID++;
-        points = 5;
+        points = DEFAULT_POINTS;
     }
     public TrialCard(int points){
         id = Card.ID++;
@@ -15,15 +19,16 @@ public class TrialCard extends Card implements AddablePoints {
     }
     @Override
     public void addPoints(){
-        setPoints(++points);
+        int temporaryPoints = points + INCREASING_POINTS;
+        setPoints(temporaryPoints);
     }
     @Override
     public void setPoints(int points){
         if(points<0){
-            this.points = 5;
+            this.points = DEFAULT_POINTS;
         }else {
-            if(points>20){
-                this.points = 20;
+            if(points>UPPER_BOUND){
+                this.points = UPPER_BOUND;
             }else{
                 this.points = points;
             }

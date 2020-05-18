@@ -1,10 +1,13 @@
 package manolCard;
 
 public class VIPCard extends Card implements AddablePoints {
+    private static final int DEFAULT_POINTS = 30;
+    private static final int UPPER_BOUND = 100;
+    private static final int INCREASING_POINTS = 2;
 
     public VIPCard(){
         id = Card.ID++;
-        points = 30;
+        points = DEFAULT_POINTS;
     }
     public VIPCard(int points){
         id = Card.ID++;
@@ -16,16 +19,16 @@ public class VIPCard extends Card implements AddablePoints {
     }
     @Override
     public void addPoints(){
-        int temporaryPoints = points + 2;
+        int temporaryPoints = points + INCREASING_POINTS;
         setPoints(temporaryPoints);
     }
     @Override
     public void setPoints(int points){
         if(points<0){
-            this.points = 30;
+            this.points = DEFAULT_POINTS;
         }else {
-            if(points>100){
-                this.points = 100;
+            if(points>UPPER_BOUND){
+                this.points = UPPER_BOUND;
             }else{
                 this.points = points;
             }
