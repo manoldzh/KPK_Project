@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22d5d5e-3900-42e5-9d18-3270c6b9eed3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KPK_Project/Test/CardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KPK_Project/Test/CardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCard/TrialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/TrialCard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,13 +43,13 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="9727" />
+          <entry key="java" value="10076" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="9727" />
+          <entry key="JAVA" value="10076" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test/CardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="374">
+              <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -86,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -104,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
+            <state relative-caret-position="34">
               <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
             </state>
           </provider>
@@ -113,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="68">
               <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
             </state>
           </provider>
@@ -161,10 +162,10 @@
         <option value="$PROJECT_DIR$/src/manolEmployee/JuniorSalesManager.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesAssistant.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesManager.java" />
-        <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
         <option value="$PROJECT_DIR$/src/manolCard/VIPCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/NormalCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/TrialCard.java" />
+        <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
         <option value="$PROJECT_DIR$/src/Test/CardTest.java" />
       </list>
     </option>
@@ -234,7 +235,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589797786768" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589798468212" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -267,8 +268,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CardTest.TestAddPointsOfTrialCardWithPassingTheBoard">
-    <configuration name="CardTest.TestAddPointsOfTrialCardWithPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard">
+    <configuration name="CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -278,13 +279,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestAddPointsOfTrialCardWithPassingTheBoard" />
+      <option name="METHOD_NAME" value="TestAddPointsOfVIPCardWithPassingTheBoard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestAddPointsOfTrialCardWithoutPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -294,13 +295,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestAddPointsOfTrialCardWithoutPassingTheBoard" />
+      <option name="METHOD_NAME" value="TestAddPointsOfVIPCardWithoutPassingTheBoard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfTrialCardWithNegativeParametersInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -310,13 +311,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfTrialCardWithNegativeParametersInConstructor" />
+      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithNegativeParameterInConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -326,13 +327,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfTrialCardWithParametersOutOfRangeInConstructor" />
+      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithParameterInRangeInConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -342,26 +343,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1" />
+      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1" />
-      <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor" />
-      <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithNegativeParametersInConstructor" />
-      <item itemvalue="JUnit.CardTest.TestAddPointsOfTrialCardWithoutPassingTheBoard" />
-      <item itemvalue="JUnit.CardTest.TestAddPointsOfTrialCardWithPassingTheBoard" />
+      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" />
+      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
+      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" />
+      <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" />
+      <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardTest.TestAddPointsOfTrialCardWithPassingTheBoard" />
-        <item itemvalue="JUnit.CardTest.TestAddPointsOfTrialCardWithoutPassingTheBoard" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithNegativeParametersInConstructor" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1" />
+        <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" />
+        <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" />
+        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" />
+        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
+        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -379,35 +380,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CardTest_TestTheValueOfIdOfTheFirstCard - 2020.05.18 at 13h 20m 14s.xml">
-      <configuration name="CardTest.TestTheValueOfIdOfTheFirstCard" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardTest - 2020.05.18 at 13h 20m 20s.xml">
+    <history-entry file="CardTest - 2020.05.18 at 13h 34m 34s.xml">
       <configuration name="CardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest - 2020.05.18 at 13h 20m 43s.xml">
-      <configuration name="CardTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardTest_TestTheValueOfIdOfTheFirstCard - 2020.05.18 at 13h 22m 29s.xml">
+    <history-entry file="CardTest_TestTheValueOfIdOfTheFirstCard - 2020.05.18 at 13h 34m 43s.xml">
       <configuration name="CardTest.TestTheValueOfIdOfTheFirstCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestTheValueOfIdOfTheSecondCard - 2020.05.18 at 13h 22m 33s.xml">
-      <configuration name="CardTest.TestTheValueOfIdOfTheSecondCard" configurationId="JUnit" />
+    <history-entry file="CardTest_TestPointsOfNormalCardWithNegativeParameterInConstructor - 2020.05.18 at 13h 35m 07s.xml">
+      <configuration name="CardTest.TestPointsOfNormalCardWithNegativeParameterInConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestTheValueOfIdOfTheSecondCard - 2020.05.18 at 13h 23m 18s.xml">
-      <configuration name="CardTest.TestTheValueOfIdOfTheSecondCard" configurationId="JUnit" />
+    <history-entry file="CardTest_TestAddPointsOfNormalCardWithoutPassingTheBoard - 2020.05.18 at 13h 36m 15s.xml">
+      <configuration name="CardTest.TestAddPointsOfNormalCardWithoutPassingTheBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfTrialCardWithoutParametersInConstructor - 2020.05.18 at 13h 25m 01s.xml">
-      <configuration name="CardTest.TestPointsOfTrialCardWithoutParametersInConstructor" configurationId="JUnit" />
+    <history-entry file="CardTest_TestAddPointsOfNormalCardWithPassingTheBoard - 2020.05.18 at 13h 36m 36s.xml">
+      <configuration name="CardTest.TestAddPointsOfNormalCardWithPassingTheBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfTrialCardWithRightParametersInConstructor - 2020.05.18 at 13h 25m 34s.xml">
-      <configuration name="CardTest.TestPointsOfTrialCardWithRightParametersInConstructor" configurationId="JUnit" />
+    <history-entry file="CardTest_TestPointsOfVIPCardWithoutParameterInConstructor - 2020.05.18 at 13h 37m 56s.xml">
+      <configuration name="CardTest.TestPointsOfVIPCardWithoutParameterInConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfTrialCardWithParametersInRangeInConstructor - 2020.05.18 at 13h 26m 39s.xml">
-      <configuration name="CardTest.TestPointsOfTrialCardWithParametersInRangeInConstructor" configurationId="JUnit" />
+    <history-entry file="CardTest_TestPointsOfVIPCardWithoutParameterInConstructor - 2020.05.18 at 13h 38m 04s.xml">
+      <configuration name="CardTest.TestPointsOfVIPCardWithoutParameterInConstructor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1 - 2020.05.18 at 13h 26m 43s.xml">
-      <configuration name="CardTest.TestPointsOfTrialCardWithParametersOutOfRangeInConstructor1" configurationId="JUnit" />
+    <history-entry file="CardTest_TestPointsOfVIPCardWithParameterInRangeInConstructor - 2020.05.18 at 13h 38m 38s.xml">
+      <configuration name="CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CardTest_TestPointsOfVIPCardWithParameterOutOfRangeInConstructor - 2020.05.18 at 13h 39m 06s.xml">
+      <configuration name="CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CardTest_TestPointsOfVIPCardWithNegativeParameterInConstructor - 2020.05.18 at 13h 40m 01s.xml">
+      <configuration name="CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -613,10 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
+    <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="34">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -627,31 +628,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
+    <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="221">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
+    <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        <state relative-caret-position="68">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/CardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="374">
+          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
         </state>
       </provider>
     </entry>
