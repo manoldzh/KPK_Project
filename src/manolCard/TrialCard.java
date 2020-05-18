@@ -1,7 +1,6 @@
 package manolCard;
 
 public class TrialCard extends Card implements AddablePoints {
-    private int id;
     public TrialCard(){
         id = Card.ID++;
         points = 5;
@@ -16,7 +15,6 @@ public class TrialCard extends Card implements AddablePoints {
     }
     @Override
     public void addPoints(){
-        
         setPoints(++points);
     }
     @Override
