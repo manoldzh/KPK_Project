@@ -3,15 +3,15 @@ package manolCard;
 public class VIPCard extends Card implements AddablePoints {
 
     public VIPCard(){
-        id = Card.id++;
+        id = Card.ID++;
         points = 30;
     }
     public VIPCard(int points){
-        id = Card.id++;
+        id = Card.ID++;
         setPoints(points);
     }
     public VIPCard(VIPCard card){
-        id = Card.id++;
+        id = Card.ID++;
         points = card.getPoints();
     }
     @Override
