@@ -11,6 +11,10 @@ import manolEmployee.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class EmployeeTest {
     @Test
     public void testSoldCars(){
@@ -28,6 +32,37 @@ public class EmployeeTest {
         Assertions.assertEquals("ivan ivanov", employee.toString());
     }
 
+
+    @Test
+    public void testComparatorOfEmployeeByName(){
+        Employee employee1 = new JuniorSalesManager("ivan", "ivanov",100);
+        Employee employee2 = new SeniorSalesAssistant("georgi","georgiev", 200);
+        List<Employee> employees = new ArrayList<>();
+        employees.add(employee1);
+        employees.add(employee2);
+        ComparatorOfEmployeesByName comparator = new ComparatorOfEmployeesByName();
+        Collections.sort(employees,comparator);
+        Assertions.assertEquals("ivan ivanov", employees.get(1).toString());
+
+    }
+
+    @Test
+    public void testComparatorOfEmployeeBySoldCars(){
+        Employee employee1 = new JuniorSalesManager("ivan", "ivanov",100);
+        Employee employee2 = new SeniorSalesAssistant("georgi","georgiev", 200);
+        List<Employee> employees = new ArrayList<>();
+        Car car =new Audi();
+        Client client = new NewClient("ivan", "georgiev");
+        employee1.sellCar(car,client);
+        employee1.sellCar(car,client);
+        employee2.sellCar(car,client);
+        employees.add(employee1);
+        employees.add(employee2);
+        ComparatorOfEmployeesBySoldCars comparator = new ComparatorOfEmployeesBySoldCars();
+        Collections.sort(employees,comparator);
+        Assertions.assertEquals("ivan ivanov", employees.get(1).toString());
+
+    }
 
     @Test
     public void testCalculateAddedPercentsOfJuniorSalesAssistant(){
