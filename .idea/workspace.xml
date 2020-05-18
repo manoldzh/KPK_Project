@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22d5d5e-3900-42e5-9d18-3270c6b9eed3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/manolCard/NormalCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/NormalCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCard/TrialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/TrialCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCard/VIPCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/VIPCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/NewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/NewClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/NormalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/NormalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolClient/VIPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolClient/VIPClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,26 +33,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="groovy" value="1" />
-          <entry key="java" value="111" />
+          <entry key="java" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="10323" />
+          <entry key="java" value="10981" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="10323" />
+          <entry key="JAVA" value="10981" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -60,8 +63,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="204">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test/ClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -69,53 +99,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/CardTest.java">
+        <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="132" column="35" selection-start-line="132" selection-start-column="35" selection-end-line="132" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="204">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,21 +146,22 @@
         <option value="$PROJECT_DIR$/src/manolCar/Mercedes.java" />
         <option value="$PROJECT_DIR$/src/manolCar/Audi.java" />
         <option value="$PROJECT_DIR$/src/manolCar/BMW.java" />
-        <option value="$PROJECT_DIR$/src/Test/CarTest.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/Client.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/NewClient.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/NormalClient.java" />
-        <option value="$PROJECT_DIR$/src/manolClient/VIPClient.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/Employee.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/JuniorSalesAssistant.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/JuniorSalesManager.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesAssistant.java" />
         <option value="$PROJECT_DIR$/src/manolEmployee/SeniorSalesManager.java" />
         <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
-        <option value="$PROJECT_DIR$/src/Test/CardTest.java" />
         <option value="$PROJECT_DIR$/src/manolCard/VIPCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/TrialCard.java" />
         <option value="$PROJECT_DIR$/src/manolCard/NormalCard.java" />
+        <option value="$PROJECT_DIR$/src/Test/CardTest.java" />
+        <option value="$PROJECT_DIR$/src/Test/CarTest.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/NewClient.java" />
+        <option value="$PROJECT_DIR$/src/Test/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/Client.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/VIPClient.java" />
+        <option value="$PROJECT_DIR$/src/manolClient/NormalClient.java" />
       </list>
     </option>
   </component>
@@ -235,7 +230,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589798886347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589803926529" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -268,8 +263,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard">
-    <configuration name="CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClientTest.testCalculateMinutesOfDrivingOfVIPClient">
+    <configuration name="ClientTest.testCalculateDiscountOfVIPClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -278,14 +273,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestAddPointsOfVIPCardWithPassingTheBoard" />
+      <option name="MAIN_CLASS_NAME" value="Test.ClientTest" />
+      <option name="METHOD_NAME" value="testCalculateDiscountOfVIPClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest.testCalculateMinutesOfDrivingOfNormalClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -294,14 +289,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestAddPointsOfVIPCardWithoutPassingTheBoard" />
+      <option name="MAIN_CLASS_NAME" value="Test.ClientTest" />
+      <option name="METHOD_NAME" value="testCalculateMinutesOfDrivingOfNormalClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest.testCalculateMinutesOfDrivingOfVIPClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -310,14 +305,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithNegativeParameterInConstructor" />
+      <option name="MAIN_CLASS_NAME" value="Test.ClientTest" />
+      <option name="METHOD_NAME" value="testCalculateMinutesOfDrivingOfVIPClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest.testCalculatePriceForCarOfVIPClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -326,14 +321,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithParameterInRangeInConstructor" />
+      <option name="MAIN_CLASS_NAME" value="Test.ClientTest" />
+      <option name="METHOD_NAME" value="testCalculatePriceForCarOfVIPClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest.testToStringMethodOfClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -342,27 +337,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CardTest" />
-      <option name="METHOD_NAME" value="TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
+      <option name="MAIN_CLASS_NAME" value="Test.ClientTest" />
+      <option name="METHOD_NAME" value="testToStringMethodOfClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" />
-      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
-      <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" />
-      <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" />
-      <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" />
+      <item itemvalue="JUnit.ClientTest.testCalculateMinutesOfDrivingOfNormalClient" />
+      <item itemvalue="JUnit.ClientTest.testToStringMethodOfClient" />
+      <item itemvalue="JUnit.ClientTest.testCalculateDiscountOfVIPClient" />
+      <item itemvalue="JUnit.ClientTest.testCalculatePriceForCarOfVIPClient" />
+      <item itemvalue="JUnit.ClientTest.testCalculateMinutesOfDrivingOfVIPClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" />
-        <item itemvalue="JUnit.CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" />
-        <item itemvalue="JUnit.CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" />
+        <item itemvalue="JUnit.ClientTest.testCalculateMinutesOfDrivingOfVIPClient" />
+        <item itemvalue="JUnit.ClientTest.testCalculatePriceForCarOfVIPClient" />
+        <item itemvalue="JUnit.ClientTest.testCalculateDiscountOfVIPClient" />
+        <item itemvalue="JUnit.ClientTest.testToStringMethodOfClient" />
+        <item itemvalue="JUnit.ClientTest.testCalculateMinutesOfDrivingOfNormalClient" />
       </list>
     </recent_temporary>
   </component>
@@ -380,35 +375,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CardTest_TestPointsOfNormalCardWithNegativeParameterInConstructor - 2020.05.18 at 13h 35m 07s.xml">
-      <configuration name="CardTest.TestPointsOfNormalCardWithNegativeParameterInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculatePriceForCarOfNewClient - 2020.05.18 at 14h 57m 03s.xml">
+      <configuration name="ClientTest.testCalculatePriceForCarOfNewClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestAddPointsOfNormalCardWithoutPassingTheBoard - 2020.05.18 at 13h 36m 15s.xml">
-      <configuration name="CardTest.TestAddPointsOfNormalCardWithoutPassingTheBoard" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateMinutesOfDrivingOfNewClient - 2020.05.18 at 14h 59m 14s.xml">
+      <configuration name="ClientTest.testCalculateMinutesOfDrivingOfNewClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestAddPointsOfNormalCardWithPassingTheBoard - 2020.05.18 at 13h 36m 36s.xml">
-      <configuration name="CardTest.TestAddPointsOfNormalCardWithPassingTheBoard" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateMinutesOfDrivingOfNewClient - 2020.05.18 at 14h 59m 30s.xml">
+      <configuration name="ClientTest.testCalculateMinutesOfDrivingOfNewClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfVIPCardWithoutParameterInConstructor - 2020.05.18 at 13h 37m 56s.xml">
-      <configuration name="CardTest.TestPointsOfVIPCardWithoutParameterInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateDiscountOfNormalClient - 2020.05.18 at 15h 04m 09s.xml">
+      <configuration name="ClientTest.testCalculateDiscountOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfVIPCardWithoutParameterInConstructor - 2020.05.18 at 13h 38m 04s.xml">
-      <configuration name="CardTest.TestPointsOfVIPCardWithoutParameterInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateDiscountOfNormalClient - 2020.05.18 at 15h 04m 22s.xml">
+      <configuration name="ClientTest.testCalculateDiscountOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfVIPCardWithParameterInRangeInConstructor - 2020.05.18 at 13h 38m 38s.xml">
-      <configuration name="CardTest.TestPointsOfVIPCardWithParameterInRangeInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculatePriceForCarOfNormalClient - 2020.05.18 at 15h 04m 31s.xml">
+      <configuration name="ClientTest.testCalculatePriceForCarOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfVIPCardWithParameterOutOfRangeInConstructor - 2020.05.18 at 13h 39m 06s.xml">
-      <configuration name="CardTest.TestPointsOfVIPCardWithParameterOutOfRangeInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculatePriceForCarOfNormalClient - 2020.05.18 at 15h 04m 42s.xml">
+      <configuration name="ClientTest.testCalculatePriceForCarOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestPointsOfVIPCardWithNegativeParameterInConstructor - 2020.05.18 at 13h 40m 01s.xml">
-      <configuration name="CardTest.TestPointsOfVIPCardWithNegativeParameterInConstructor" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateMinutesOfDrivingOfNormalClient - 2020.05.18 at 15h 06m 46s.xml">
+      <configuration name="ClientTest.testCalculateMinutesOfDrivingOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestAddPointsOfVIPCardWithoutPassingTheBoard - 2020.05.18 at 13h 40m 48s.xml">
-      <configuration name="CardTest.TestAddPointsOfVIPCardWithoutPassingTheBoard" configurationId="JUnit" />
+    <history-entry file="ClientTest_testCalculateMinutesOfDrivingOfNormalClient - 2020.05.18 at 15h 06m 58s.xml">
+      <configuration name="ClientTest.testCalculateMinutesOfDrivingOfNormalClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CardTest_TestAddPointsOfVIPCardWithPassingTheBoard - 2020.05.18 at 13h 41m 10s.xml">
-      <configuration name="CardTest.TestAddPointsOfVIPCardWithPassingTheBoard" configurationId="JUnit" />
+    <history-entry file="ClientTest_testToStringMethodOfClient - 2020.05.18 at 15h 08m 49s.xml">
+      <configuration name="ClientTest.testToStringMethodOfClient" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -425,7 +420,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,7 +429,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -534,13 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="131" selection-start-line="34" selection-start-column="131" selection-end-line="34" selection-end-column="131" />
         </state>
       </provider>
     </entry>
@@ -593,48 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/CardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="132" column="35" selection-start-line="132" selection-start-column="35" selection-end-line="132" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -653,6 +592,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/CarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/CardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/VIPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolClient/NormalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
         </state>
       </provider>
     </entry>

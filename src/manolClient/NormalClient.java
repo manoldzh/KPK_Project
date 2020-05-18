@@ -12,7 +12,7 @@ public class NormalClient extends Client {
         this.setCard(new NormalCard());
     }
 
-    private double calculateDiscount(){
+    public double calculateDiscount(){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
         return discount;
     }
@@ -25,7 +25,8 @@ public class NormalClient extends Client {
     public void buyCar(Car car){
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
     }
-    private int calculateMinutesOfDriving(){
+    @Override
+    public int calculateMinutesOfDriving(){
         int minutesOfDriving = getPoints() + ADDED_MINUTES;
         return minutesOfDriving;
     }

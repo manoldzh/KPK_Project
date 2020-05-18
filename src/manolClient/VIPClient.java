@@ -11,13 +11,12 @@ public class VIPClient extends Client {
         super(name,surname);
         setCard(new VIPCard());
     }
-    private double calculateDiscount(){
+    public double calculateDiscount(){
         double discount = ADDED_PERCENTAGE_OF_DISCOUNT + getPoints()/DIVIDER_OF_POINTS;
         return discount;
     }
     @Override
     public double calculatePriceForCar(Car car){
-
         double priceForThisClient = car.getPrice() * ( 100 - calculateDiscount())/100;
         return priceForThisClient;
     }
@@ -25,13 +24,14 @@ public class VIPClient extends Client {
     public void buyCar(Car car){
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
     }
-    private int calculateMinutesOdDriving(){
+    @Override
+    public int calculateMinutesOfDriving(){
         int minutesOfDriving = getPoints() + ADDED_MINUTES;
         return minutesOfDriving;
     }
     @Override
     public void drive(Car car){
         String drivingCar = car.drive();
-        System.out.println(drivingCar + toString() + " can drive the car " + car.toString() + " for " + calculateMinutesOdDriving() + " minutes");
+        System.out.println(drivingCar + toString() + " can drive the car " + car.toString() + " for " + calculateMinutesOfDriving() + " minutes");
     }
 }
