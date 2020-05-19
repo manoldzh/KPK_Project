@@ -235,4 +235,37 @@ public class ShowRoomTest {
         showRoom.sortCarsByPrice();
         Assertions.assertEquals("Audi",showRoom.getCarByIndex(1).getBrand());
     }
+    @Test
+    public void testSortEmployeesByName(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new SeniorSalesAssistant("ivan","ivanov",200);
+        Employee employee2 = new JuniorSalesManager("georgi", "georgiev",500);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        showRoom.sortEmployeesByName();
+        Assertions.assertEquals("georgi georgiev",showRoom.getEmlpoyeeByIndex(0).toString());
+    }
+    @Test
+    public void testSortEmployeesBySoldCars(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new SeniorSalesAssistant("ivan","ivanov",200);
+        Employee employee2 = new JuniorSalesManager("georgi", "georgiev",500);
+        Client client1 = new VIPClient("ivan", "ivanov");
+        Client client2 = new NormalClient("georgi", "georgiev");
+        Car car1 = new BMW("m5",10000,"123",true);
+        Car car2 = new Audi("a2", 8000, "12", false);
+        Car car3 = new Mercedes("e220", 5000, "1", true);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addCar(car3);
+        showRoom.addClient(client1);
+        showRoom.addClient(client2);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        showRoom.sellCarToClient(employee1,car1,client1);
+        showRoom.sellCarToClient(employee1,car2,client2);
+        showRoom.sellCarToClient(employee2,car3,client1);
+        showRoom.sortEmployeesBySoldCars();
+        Assertions.assertEquals("georgi georgiev",showRoom.getEmlpoyeeByIndex(0).toString());
+    }
 }
