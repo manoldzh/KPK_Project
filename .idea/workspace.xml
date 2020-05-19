@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22d5d5e-3900-42e5-9d18-3270c6b9eed3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Test/ShowRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/ShowRoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manolShowRoom/ShowRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolShowRoom/ShowRoom.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,13 +43,13 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="17494" />
+          <entry key="java" value="19029" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="17494" />
+          <entry key="JAVA" value="19029" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manolShowRoom/ShowRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+            <state relative-caret-position="-867">
+              <caret line="89" column="54" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -69,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test/ShowRoomTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+              <caret line="234" column="35" selection-start-line="234" selection-start-column="35" selection-end-line="234" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -208,7 +209,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589898605048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589900902684" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -241,8 +242,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShowRoomTest.testGetTheAmountOfAllCommissions">
-    <configuration name="ShowRoomTest.testGetNumberOfCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShowRoomTest.testSortCarsByPrice">
+    <configuration name="ShowRoomTest.testGetNumberOfAllAvailableCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -252,13 +253,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ShowRoomTest" />
-      <option name="METHOD_NAME" value="testGetNumberOfCars" />
+      <option name="METHOD_NAME" value="testGetNumberOfAllAvailableCars" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowRoomTest.testGetNumberOfClients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShowRoomTest.testSortCarsByBrand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -268,13 +269,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ShowRoomTest" />
-      <option name="METHOD_NAME" value="testGetNumberOfClients" />
+      <option name="METHOD_NAME" value="testSortCarsByBrand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowRoomTest.testGetNumberOfEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShowRoomTest.testSortCarsByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -284,13 +285,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ShowRoomTest" />
-      <option name="METHOD_NAME" value="testGetNumberOfEmployees" />
+      <option name="METHOD_NAME" value="testSortCarsByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowRoomTest.testGetTheAmountOfAllCommissions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShowRoomTest.testSortClientsAlphabetically" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -300,13 +301,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ShowRoomTest" />
-      <option name="METHOD_NAME" value="testGetTheAmountOfAllCommissions" />
+      <option name="METHOD_NAME" value="testSortClientsAlphabetically" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowRoomTest.tetsGetNumberOfCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShowRoomTest.testSortClientsByPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KPK_Project" />
       <extension name="coverage">
         <pattern>
@@ -316,26 +317,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ShowRoomTest" />
-      <option name="METHOD_NAME" value="tetsGetNumberOfCars" />
+      <option name="METHOD_NAME" value="testSortClientsByPoints" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShowRoomTest.tetsGetNumberOfCars" />
-      <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfCars" />
-      <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfClients" />
-      <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfEmployees" />
-      <item itemvalue="JUnit.ShowRoomTest.testGetTheAmountOfAllCommissions" />
+      <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfAllAvailableCars" />
+      <item itemvalue="JUnit.ShowRoomTest.testSortClientsByPoints" />
+      <item itemvalue="JUnit.ShowRoomTest.testSortClientsAlphabetically" />
+      <item itemvalue="JUnit.ShowRoomTest.testSortCarsByBrand" />
+      <item itemvalue="JUnit.ShowRoomTest.testSortCarsByPrice" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShowRoomTest.testGetTheAmountOfAllCommissions" />
-        <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfEmployees" />
-        <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfClients" />
-        <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfCars" />
-        <item itemvalue="JUnit.ShowRoomTest.tetsGetNumberOfCars" />
+        <item itemvalue="JUnit.ShowRoomTest.testSortCarsByPrice" />
+        <item itemvalue="JUnit.ShowRoomTest.testSortCarsByBrand" />
+        <item itemvalue="JUnit.ShowRoomTest.testSortClientsAlphabetically" />
+        <item itemvalue="JUnit.ShowRoomTest.testSortClientsByPoints" />
+        <item itemvalue="JUnit.ShowRoomTest.testGetNumberOfAllAvailableCars" />
       </list>
     </recent_temporary>
   </component>
@@ -353,35 +354,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShowRoomTest_tets - 2020.05.19 at 17h 07m 37s.xml">
-      <configuration name="ShowRoomTest.tets" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testGetEmployeeCommissionWhenItIsZero - 2020.05.19 at 17h 53m 56s.xml">
+      <configuration name="ShowRoomTest.testGetEmployeeCommissionWhenItIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_tetsGetNumberOfCars - 2020.05.19 at 17h 09m 12s.xml">
-      <configuration name="ShowRoomTest.tetsGetNumberOfCars" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testGetAllAvailableCars - 2020.05.19 at 17h 56m 48s.xml">
+      <configuration name="ShowRoomTest.testGetAllAvailableCars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_tetsGetNumberOfCars - 2020.05.19 at 17h 09m 56s.xml">
-      <configuration name="ShowRoomTest.tetsGetNumberOfCars" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testGetNumberOfAllAvailableCars - 2020.05.19 at 17h 58m 27s.xml">
+      <configuration name="ShowRoomTest.testGetNumberOfAllAvailableCars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetNumberOfCars - 2020.05.19 at 17h 10m 54s.xml">
-      <configuration name="ShowRoomTest.testGetNumberOfCars" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testGetNumberOfAllAvailableCars - 2020.05.19 at 17h 59m 29s.xml">
+      <configuration name="ShowRoomTest.testGetNumberOfAllAvailableCars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetNumberOfCars - 2020.05.19 at 17h 14m 56s.xml">
-      <configuration name="ShowRoomTest.testGetNumberOfCars" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortClientsByPoints - 2020.05.19 at 18h 02m 58s.xml">
+      <configuration name="ShowRoomTest.testSortClientsByPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetNumberOfCars - 2020.05.19 at 17h 15m 29s.xml">
-      <configuration name="ShowRoomTest.testGetNumberOfCars" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortClientsByPoints - 2020.05.19 at 18h 03m 22s.xml">
+      <configuration name="ShowRoomTest.testSortClientsByPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetNumberOfClients - 2020.05.19 at 17h 19m 27s.xml">
-      <configuration name="ShowRoomTest.testGetNumberOfClients" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortClientsAlphabetically - 2020.05.19 at 18h 04m 08s.xml">
+      <configuration name="ShowRoomTest.testSortClientsAlphabetically" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetNumberOfEmployees - 2020.05.19 at 17h 19m 30s.xml">
-      <configuration name="ShowRoomTest.testGetNumberOfEmployees" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortClientsAlphabetically - 2020.05.19 at 18h 04m 23s.xml">
+      <configuration name="ShowRoomTest.testSortClientsAlphabetically" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetTheAmountOfAllCommissions - 2020.05.19 at 17h 21m 40s.xml">
-      <configuration name="ShowRoomTest.testGetTheAmountOfAllCommissions" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortCarsByBrand - 2020.05.19 at 18h 06m 32s.xml">
+      <configuration name="ShowRoomTest.testSortCarsByBrand" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowRoomTest_testGetTheAmountOfAllCommissions - 2020.05.19 at 17h 24m 56s.xml">
-      <configuration name="ShowRoomTest.testGetTheAmountOfAllCommissions" configurationId="JUnit" />
+    <history-entry file="ShowRoomTest_testSortCarsByBrand - 2020.05.19 at 18h 06m 34s.xml">
+      <configuration name="ShowRoomTest.testSortCarsByBrand" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -645,15 +646,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manolShowRoom/ShowRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+        <state relative-caret-position="-867">
+          <caret line="89" column="54" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/ShowRoomTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <caret line="234" column="35" selection-start-line="234" selection-start-column="35" selection-end-line="234" selection-end-column="35" />
         </state>
       </provider>
     </entry>

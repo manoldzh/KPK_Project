@@ -3,6 +3,7 @@ package Test;
 import manolCar.Audi;
 import manolCar.BMW;
 import manolCar.Car;
+import manolCar.Mercedes;
 import manolClient.Client;
 import manolClient.NewClient;
 import manolClient.NormalClient;
@@ -66,9 +67,172 @@ public class ShowRoomTest {
         Assertions.assertEquals(228.43333333333334,showRoom.getAmountOfAllCommissions());
     }
     @Test
-    public void testGetClientByIndex(){
+    public void testGetClientByIndexWhenItExists(){
         ShowRoom showRoom = new ShowRoom();
-        
+        Client client1 = new NormalClient("ivan","ivanov");
+        Client client2 = new VIPClient("georgi","georgiev");
+        showRoom.addClient(client1);
+        showRoom.addClient(client2);
+        Client indexedClient = showRoom.getClientByIndex(1);
+        Assertions.assertEquals("georgi georgiev",indexedClient.toString());
+    }
+    @Test
+    public void testGetClientByIndexWhenItNotExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client1 = new NormalClient("ivan","ivanov");
+        Client client2 = new VIPClient("georgi","georgiev");
+        showRoom.addClient(client1);
+        showRoom.addClient(client2);
+        Client indexedClient = showRoom.getClientByIndex(2);
+        Assertions.assertEquals(null,indexedClient);
+    }
+    @Test
+    public void testGetCarByIndexWhenItExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Car car1 = new Audi();
+        Car car2 = new Mercedes();
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        Car indexedCar = showRoom.getCarByIndex(0);
+        Assertions.assertEquals(car1,indexedCar);
+    }
+    @Test
+    public void testGetCarByIndexWhenItNotExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Car car1 = new Audi();
+        Car car2 = new Mercedes();
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        Car indexedCar = showRoom.getCarByIndex(5);
+        Assertions.assertEquals(null,indexedCar);
+    }
+    @Test
+    public void testGetEmployeeByIndexWhenItExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new JuniorSalesManager("ivan", "ivanov",200);
+        Employee employee2 = new SeniorSalesAssistant("georgi","georgiev",300);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        Employee indexedEmployee = showRoom.getEmlpoyeeByIndex(1);
+        Assertions.assertEquals(employee2,indexedEmployee);
+    }
+    @Test
+    public void testGetEmployeeByIndexWhenItNotExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new JuniorSalesManager("ivan", "ivanov",200);
+        Employee employee2 = new SeniorSalesAssistant("georgi","georgiev",300);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        Employee indexedEmployee = showRoom.getEmlpoyeeByIndex(-1);
+        Assertions.assertEquals(null,indexedEmployee);
+    }
+    @Test
+    public void testGetEmployeeCommissionWhenItIsNotZero(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new JuniorSalesManager();
+        showRoom.addEmployee(employee1);
+        Car car1 = new BMW("m5",10000,"123",true);
+        Car car2 = new Audi("a3",20000,"1234",false);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        Client client1 = new VIPClient("ivan","ivanov");
+        showRoom.addClient(client1);
+        showRoom.sellCarToClient(employee1,car1,client1);
+        showRoom.sellCarToClient(employee1,car2,client1);
+        Assertions.assertEquals(296.6666666666667,showRoom.getEmployeeCommission(employee1));
+    }
+    @Test
+    public void testGetEmployeeCommissionWhenEmployeeNotExists(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new JuniorSalesManager();
+        Employee employee2 = new SeniorSalesAssistant();
+        showRoom.addEmployee(employee1);
+        Car car1 = new BMW("m5",10000,"123",true);
+        Car car2 = new Audi("a3",20000,"1234",false);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        Client client1 = new VIPClient("ivan","ivanov");
+        showRoom.addClient(client1);
+        showRoom.sellCarToClient(employee1,car1,client1);
+        showRoom.sellCarToClient(employee1,car2,client1);
+        Assertions.assertEquals(-1,showRoom.getEmployeeCommission(employee2));
+    }
+    @Test
+    public void testGetEmployeeCommissionWhenItIsZero(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new JuniorSalesManager();
+        showRoom.addEmployee(employee1);
+        Assertions.assertEquals(0,showRoom.getEmployeeCommission(employee1));
     }
 
+    @Test
+    public void testGetAllAvailableCars(){
+            ShowRoom showRoom = new ShowRoom();
+            Car car1 = new BMW("m5",10000,"123",true);
+            Car car2 = new Audi("a3",20000,"1234",false);
+            showRoom.addCar(car1);
+            showRoom.addCar(car2);
+            Client client1 = new VIPClient("ivan","ivanov");
+            showRoom.addClient(client1);
+            showRoom.giveCarToClientToDrive(car1,client1);
+            Assertions.assertEquals(1,showRoom.getAllAvailableCarsForDriving().size());
+    }
+    @Test
+    public void testGetNumberOfAllAvailableCars(){
+        ShowRoom showRoom = new ShowRoom();
+        Car car1 = new BMW("m5",10000,"123",true);
+        Car car2 = new Audi("a3",20000,"1234",false);
+        Car car3 = new Mercedes("e220", 20000, "12", true);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addCar(car3);
+        Client client1 = new VIPClient("ivan","ivanov");
+        showRoom.addClient(client1);
+        showRoom.giveCarToClientToDrive(car1,client1);
+        Assertions.assertEquals(2,showRoom.getNumberOfAllAvailableCarsForDriving());
+    }
+    @Test
+    public void testSortClientsByPoints(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client1 = new VIPClient("ivan", "ivanov");
+        Client client2 = new NormalClient("georgi", "georgiev");
+        showRoom.addClient(client1);
+        showRoom.addClient(client2);
+        showRoom.sortClientsByPoint();
+        Assertions.assertEquals("ivan ivanov", showRoom.getClientByIndex(1).toString());
+    }
+    @Test
+    public void testSortClientsAlphabetically(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client1 = new VIPClient("ivan", "ivanov");
+        Client client2 = new NormalClient("georgi", "georgiev");
+        showRoom.addClient(client1);
+        showRoom.addClient(client2);
+        showRoom.sortClientsAlphabetacally();
+        Assertions.assertEquals("ivan ivanov", showRoom.getClientByIndex(1).toString());
+    }
+    @Test
+    public void testSortCarsByBrand(){
+        ShowRoom showRoom = new ShowRoom();
+        Car car1 = new BMW();
+        Car car2 = new Audi();
+        Car car3 = new Mercedes();
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addCar(car3);
+        showRoom.sortCarsByBrand();
+        Assertions.assertEquals("Audi",showRoom.getCarByIndex(0).getBrand());
+    }
+    @Test
+    public void testSortCarsByPrice(){
+        ShowRoom showRoom = new ShowRoom();
+        Car car1 = new BMW("m5",10000,"123",true);
+        Car car2 = new Audi("a2", 8000, "12", false);
+        Car car3 = new Mercedes("e220", 5000, "1", true);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addCar(car3);
+        showRoom.sortCarsByPrice();
+        Assertions.assertEquals("Audi",showRoom.getCarByIndex(1).getBrand());
+    }
 }

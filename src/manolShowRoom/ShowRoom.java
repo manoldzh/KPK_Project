@@ -51,7 +51,7 @@ public class ShowRoom {
         }
         return  returnedClient;
     }
-    public Car getCar(int index){
+    public Car getCarByIndex(int index){
         Car returnedCar;
         try{
             returnedCar = cars.get(index);
@@ -69,22 +69,11 @@ public class ShowRoom {
         }
         return  returnedEmployee;
     }
-    public boolean getEmployeeCommission(Employee employee){
+    public double getEmployeeCommission(Employee employee){
         if(!employees.contains(employee)){
-            return false;
+            return -1;
         }
-        return true;
-    }
-    public int getNumberOfAllAvailabelCarsForDriving(){
-        int numberOfAllAvailableCars = 0;
-        Iterator iterator = availabilityOfCars.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry pair = (Map.Entry)iterator.next();
-            if((boolean)pair.getValue()) {
-                numberOfAllAvailableCars++;
-            }
-        }
-        return numberOfAllAvailableCars;
+        return commissions.get(employee);
     }
     public ArrayList<Car> getAllAvailableCarsForDriving(){
         ArrayList<Car> availableCars = new ArrayList<>();
@@ -97,6 +86,10 @@ public class ShowRoom {
         }
         return availableCars;
     }
+    public int getNumberOfAllAvailableCarsForDriving(){
+        return getAllAvailableCarsForDriving().size();
+    }
+
 
 
     public boolean addClient(Client client){
