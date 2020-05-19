@@ -16,11 +16,13 @@ public class ShowRoom {
     private List<Car> cars;
     private List<Employee> employees;
     private Map<Employee,Double> commissions;
+    private Map<Car,Boolean> availabilityOfCars;
     public ShowRoom(){
         clients = new ArrayList<Client>();
         cars = new ArrayList<Car>();
         employees = new ArrayList<Employee>();
         commissions = new TreeMap<Employee,Double>();
+        availabilityOfCars = new TreeMap<Car, Boolean>();
     }
     public int getNumberOfCars(){
         return cars.size();
@@ -31,7 +33,7 @@ public class ShowRoom {
     public int getNumberOfEmployees(){
         return employees.size();
     }
-    public double getAllCommissions(){
+    public double getAmountOfAllCommissions(){
         double sumOfAllCommissions = 0;
         Iterator iterator = commissions.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -40,79 +42,6 @@ public class ShowRoom {
         }
         return sumOfAllCommissions;
     }
-
-    public boolean addClient(Client client){
-        if(!clients.contains(client)) {
-            clients.add(client);
-            return true;
-        }
-        return false;
-    }
-    public boolean addCar(Car car){
-        if(!cars.contains(car)){
-            cars.add(car);
-            return true;
-        }
-        return false;
-    }
-    public boolean addEmployee(Employee employee){
-        if(!employees.contains(employee)) {
-            employees.add(employee);
-            commissions.put(employee,0.0);
-            return true;
-        }
-        return false;
-    }
-    public boolean removeClient(Client client){
-        int indexOfClient = clients.indexOf(client);
-        if(indexOfClient != -1){
-            clients.remove(indexOfClient);
-            return true;
-        }
-        return  false;
-    }
-    public boolean removeCar(Car car){
-        int indexOfCar = cars.indexOf(car);
-        if(indexOfCar != -1){
-            cars.remove(indexOfCar);
-            return true;
-        }
-        return false;
-    }
-    public boolean removeEmployee(Employee employee){
-        int indexOfEmployee = employees.indexOf(employee);
-        if(indexOfEmployee != -1){
-            employees.remove(indexOfEmployee);
-            commissions.remove(employee);
-            return true;
-        }
-        return false;
-    }
-    public void sortClientsByPoint(){
-        ComparatorOfClientsByPoints comparator = new ComparatorOfClientsByPoints();
-        Collections.sort(clients,comparator);
-    }
-    public void sortClientsAlphabetacally(){
-        Collections.sort(clients);
-    }
-    public void sortCarsByBrand(){
-        ComparatorOfCarsByBrand comparator = new ComparatorOfCarsByBrand();
-        Collections.sort(cars,comparator);
-    }
-    public void sortCarsByPrice(){
-        ComparatorOfCarsByPrice comparator = new ComparatorOfCarsByPrice();
-        Collections.sort(cars,comparator);
-    }
-    public void sortEmployeesByName(){
-        ComparatorOfEmployeesByName comparator = new ComparatorOfEmployeesByName();
-        Collections.sort(employees,comparator);
-    }
-    public void sortEmployeesBySoldCars(){
-        ComparatorOfEmployeesBySoldCars comparator = new ComparatorOfEmployeesBySoldCars();
-        Collections.sort(employees,comparator);
-    }
-
-
     public Client getClientByIndex(int index){
         Client returnedClient;
         try{
@@ -140,9 +69,114 @@ public class ShowRoom {
         }
         return  returnedEmployee;
     }
-    public double getEmployeeCommission(Employee employee){
-        return commissions.get(employee);
+    public boolean getEmployeeCommission(Employee employee){
+        if(!employees.contains(employee)){
+            return false;
+        }
+        return true;
     }
+    public int getNumberOfAllAvailabelCarsForDriving(){
+        int numberOfAllAvailableCars = 0;
+        Iterator iterator = availabilityOfCars.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            if((boolean)pair.getValue()) {
+                numberOfAllAvailableCars++;
+            }
+        }
+        return numberOfAllAvailableCars;
+    }
+    public ArrayList<Car> getAllAvailableCarsForDriving(){
+        ArrayList<Car> availableCars = new ArrayList<>();
+        Iterator iterator = availabilityOfCars.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            if((boolean)pair.getValue()) {
+                availableCars.add((Car)pair.getKey());
+            }
+        }
+        return availableCars;
+    }
+
+
+    public boolean addClient(Client client){
+        if(!clients.contains(client)) {
+            clients.add(client);
+            return true;
+        }
+        return false;
+    }
+    public boolean addCar(Car car){
+        if(!cars.contains(car)){
+            availabilityOfCars.put(car,true);
+            cars.add(car);
+            return true;
+        }
+        return false;
+    }
+    public boolean addEmployee(Employee employee){
+        if(!employees.contains(employee)) {
+            employees.add(employee);
+            commissions.put(employee,0.0);
+            return true;
+        }
+        return false;
+    }
+
+
+    public boolean removeClient(Client client){
+        int indexOfClient = clients.indexOf(client);
+        if(indexOfClient != -1){
+            clients.remove(indexOfClient);
+            return true;
+        }
+        return  false;
+    }
+    public boolean removeCar(Car car){
+        int indexOfCar = cars.indexOf(car);
+        if(indexOfCar != -1){
+            cars.remove(indexOfCar);
+            availabilityOfCars.remove(car);
+            return true;
+        }
+        return false;
+    }
+    public boolean removeEmployee(Employee employee){
+        int indexOfEmployee = employees.indexOf(employee);
+        if(indexOfEmployee != -1){
+            employees.remove(indexOfEmployee);
+            commissions.remove(employee);
+            return true;
+        }
+        return false;
+    }
+
+
+    public void sortClientsByPoint(){
+        ComparatorOfClientsByPoints comparator = new ComparatorOfClientsByPoints();
+        Collections.sort(clients,comparator);
+    }
+    public void sortClientsAlphabetacally(){
+        Collections.sort(clients);
+    }
+    public void sortCarsByBrand(){
+        ComparatorOfCarsByBrand comparator = new ComparatorOfCarsByBrand();
+        Collections.sort(cars,comparator);
+    }
+    public void sortCarsByPrice(){
+        ComparatorOfCarsByPrice comparator = new ComparatorOfCarsByPrice();
+        Collections.sort(cars,comparator);
+    }
+    public void sortEmployeesByName(){
+        ComparatorOfEmployeesByName comparator = new ComparatorOfEmployeesByName();
+        Collections.sort(employees,comparator);
+    }
+    public void sortEmployeesBySoldCars(){
+        ComparatorOfEmployeesBySoldCars comparator = new ComparatorOfEmployeesBySoldCars();
+        Collections.sort(employees,comparator);
+    }
+
+
 
     public boolean sellCarToClient(Employee employee,Car car, Client client){
         if(!cars.contains(car) || !clients.contains(client) || !employees.contains(employee)){
@@ -155,11 +189,36 @@ public class ShowRoom {
         client.buyCar(car);
         return true;
     }
+    public boolean giveCarToClientToDrive(Car car, Client client){
+        if(!cars.contains(car) || !clients.contains(client)){
+            return false;
+        }
+        client.drive(car);
+        availabilityOfCars.replace(car, false);
+        return true;
+    }
+    public boolean returnCarFromClient(Car car, Client client){
+        if(!cars.contains(car) || !clients.contains(client)){
+            return false;
+        }
+        availabilityOfCars.replace(car,true);
+        return true;
+    }
 
-    public double payCommission(Employee employee){
+
+    public double payCommissionOfEmployee(Employee employee){
         double commission = commissions.get(employee);
         commissions.replace(employee,0.0);
         return commission;
+    }
+    public double payAllCommisions(){
+        double sumOfCommissions = 0;
+        Iterator iterator = commissions.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            sumOfCommissions += payCommissionOfEmployee((Employee) pair.getKey());
+        }
+        return sumOfCommissions;
     }
 
 }
