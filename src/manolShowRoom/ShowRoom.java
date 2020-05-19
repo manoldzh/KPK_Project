@@ -20,7 +20,7 @@ public class ShowRoom {
         clients = new ArrayList<Client>();
         cars = new ArrayList<Car>();
         employees = new ArrayList<Employee>();
-        commissions = new TreeMap<Employee,Double>()
+        commissions = new TreeMap<Employee,Double>();
     }
     public int getNumberOfCars(){
         return cars.size();
@@ -58,7 +58,7 @@ public class ShowRoom {
     public boolean addEmployee(Employee employee){
         if(!employees.contains(employee)) {
             employees.add(employee);
-            commissions.put(employee,0);
+            commissions.put(employee,0.0);
             return true;
         }
         return false;
@@ -161,5 +161,5 @@ public class ShowRoom {
         commissions.replace(employee,0.0);
         return commission;
     }
-    
+
 }
