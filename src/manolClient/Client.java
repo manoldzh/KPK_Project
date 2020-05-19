@@ -22,6 +22,9 @@ public abstract class Client implements Comparable<Client>  {
     public void setCard(Card card) {
         this.card = card;
     }
+    public int getIdOfCard(){
+        return this.card.getId();
+    }
     @Override
     public String toString(){
         return name + " " + surname;
@@ -32,5 +35,21 @@ public abstract class Client implements Comparable<Client>  {
     }
     public int getPoints(){
         return card.getPoints();
+    }
+    @Override
+    public boolean equals(Object c){
+        if(c==null){
+            return false;
+        }
+        if(c == this){
+            return true;
+        }
+        if(c.getClass() != this.getClass()) {
+            return false;
+        }
+        if(((Client)c).getIdOfCard() == this.getIdOfCard() ) {
+            return true;
+        }
+        return false;
     }
 }

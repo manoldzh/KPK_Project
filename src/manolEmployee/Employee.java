@@ -35,4 +35,20 @@ public abstract class Employee {
 
     abstract public double calculateCommission(Car car, Client client);
     abstract public double calculateAddedPercents();
+    @Override
+    public boolean equals(Object c){
+        if(c==null){
+            return false;
+        }
+        if(c == this){
+            return true;
+        }
+        if(c.getClass() != this.getClass()) {
+            return false;
+        }
+        if(((Employee)c).toString().equals(this.toString()) ) {
+            return true;
+        }
+        return false;
+    }
 }
