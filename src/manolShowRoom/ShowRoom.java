@@ -21,8 +21,8 @@ public class ShowRoom {
         clients = new ArrayList<Client>();
         cars = new ArrayList<Car>();
         employees = new ArrayList<Employee>();
-        commissions = new TreeMap<Employee,Double>();
-        availabilityOfCars = new TreeMap<Car, Boolean>();
+        commissions = new HashMap<Employee,Double>();
+        availabilityOfCars = new HashMap<Car, Boolean>();
     }
     public int getNumberOfCars(){
         return cars.size();
@@ -51,7 +51,7 @@ public class ShowRoom {
         }
         return  returnedClient;
     }
-    public Car getCarByIndex(int index){
+    public Car getCar(int index){
         Car returnedCar;
         try{
             returnedCar = cars.get(index);
@@ -187,6 +187,7 @@ public class ShowRoom {
         double addedCommission = employee.calculateCommission(car, client);
         commissions.replace(employee,commissionUntilNow + addedCommission);
         client.buyCar(car);
+        removeCar(car);
         return true;
     }
     public boolean giveCarToClientToDrive(Car car, Client client){
