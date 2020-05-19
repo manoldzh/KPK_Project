@@ -21,6 +21,9 @@ public abstract class Employee {
         this.salary = salary;
         soldCars = 0;
     }
+    public int getSalary(){
+        return salary;
+    }
     public int getSoldCars(){
         return soldCars;
     }

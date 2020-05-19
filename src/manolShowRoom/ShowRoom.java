@@ -214,5 +214,12 @@ public class ShowRoom {
         }
         return sumOfCommissions;
     }
+    public double getValueOfAllSalaries(){
+        double sumOfSalaries = 0;
+        for(int i =0; i<employees.size();i++){
+            sumOfSalaries+=employees.get(i).getSalary();
+        }
+        return  sumOfSalaries;
+    }
 
 }

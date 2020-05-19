@@ -11,6 +11,7 @@ import manolClient.VIPClient;
 import manolEmployee.Employee;
 import manolEmployee.JuniorSalesManager;
 import manolEmployee.SeniorSalesAssistant;
+import manolEmployee.SeniorSalesManager;
 import manolShowRoom.ShowRoom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -267,5 +268,114 @@ public class ShowRoomTest {
         showRoom.sellCarToClient(employee2,car3,client1);
         showRoom.sortEmployeesBySoldCars();
         Assertions.assertEquals("georgi georgiev",showRoom.getEmlpoyeeByIndex(0).toString());
+    }
+
+    @Test
+    public void testSellCarToClientWhenEmployeeIsNotAdded(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car = new BMW();
+        Employee employee = new SeniorSalesAssistant("ivan", "ivanov",200);
+        showRoom.addClient(client);
+        showRoom.addCar(car);
+        Assertions.assertEquals(false,showRoom.sellCarToClient(employee,car,client));
+    }
+    @Test
+    public void testSellCarToClient(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car = new BMW();
+        Employee employee = new SeniorSalesAssistant("ivan", "ivanov",200);
+        showRoom.addClient(client);
+        showRoom.addCar(car);
+        showRoom.addEmployee(employee);
+        Assertions.assertEquals(true,showRoom.sellCarToClient(employee,car,client));
+    }
+    @Test
+    public void testReturnCarFromClient(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car = new BMW();
+        showRoom.addCar(car);
+        showRoom.addClient(client);
+        showRoom.giveCarToClientToDrive(car,client);
+        showRoom.returnCarFromClient(car,client);
+        Assertions.assertEquals(1,showRoom.getNumberOfAllAvailableCarsForDriving());
+    }
+    @Test
+    public void testPayCommissionOfEmployeeTheAmountOfCommission(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car1 = new BMW("m5",10000,"12",true);
+        Car car2 = new Audi("a5",20000,"123",false);
+        Employee employee = new SeniorSalesManager("ivan", "ivanov", 200);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addClient(client);
+        showRoom.addEmployee(employee);
+        showRoom.sellCarToClient(employee,car1,client);
+        showRoom.sellCarToClient(employee,car2,client);
+        Assertions.assertEquals(445,showRoom.payCommissionOfEmployee(employee));
+    }
+    @Test
+    public void testPayCommissionOfEmployeeProcess(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car1 = new BMW("m5",10000,"12",true);
+        Car car2 = new Audi("a5",20000,"123",false);
+        Employee employee = new SeniorSalesManager("ivan", "ivanov", 200);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addClient(client);
+        showRoom.addEmployee(employee);
+        showRoom.sellCarToClient(employee,car1,client);
+        showRoom.sellCarToClient(employee,car2,client);
+        showRoom.payCommissionOfEmployee(employee);
+        Assertions.assertEquals(0,showRoom.getEmployeeCommission(employee));
+    }
+    @Test
+    public void testPayAllCommissions(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car1 = new BMW("m5",10000,"12",true);
+        Car car2 = new Audi("a5",20000,"123",false);
+        Employee employee1 = new SeniorSalesManager("ivan", "ivanov", 200);
+        Employee employee2 = new JuniorSalesManager("georgi", "georgiev",100);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addClient(client);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        showRoom.sellCarToClient(employee1,car1,client);
+        showRoom.sellCarToClient(employee2,car2,client);
+        showRoom.payAllCommisions();
+        Assertions.assertEquals(0,showRoom.getEmployeeCommission(employee1));
+    }
+    @Test
+    public void testPayAllCommissionsSecond(){
+        ShowRoom showRoom = new ShowRoom();
+        Client client = new VIPClient("ivan","ivanov");
+        Car car1 = new BMW("m5",10000,"12",true);
+        Car car2 = new Audi("a5",20000,"123",false);
+        Employee employee1 = new SeniorSalesManager("ivan", "ivanov", 200);
+        Employee employee2 = new JuniorSalesManager("georgi", "georgiev",100);
+        showRoom.addCar(car1);
+        showRoom.addCar(car2);
+        showRoom.addClient(client);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        showRoom.sellCarToClient(employee1,car1,client);
+        showRoom.sellCarToClient(employee2,car2,client);
+        showRoom.payAllCommisions();
+        Assertions.assertEquals(0,showRoom.getEmployeeCommission(employee2));
+    }
+    @Test
+    public void testGetValueOfAllSalaries(){
+        ShowRoom showRoom = new ShowRoom();
+        Employee employee1 = new SeniorSalesManager("ivan", "ivanov", 200);
+        Employee employee2 = new JuniorSalesManager("georgi", "georgiev",100);
+        showRoom.addEmployee(employee1);
+        showRoom.addEmployee(employee2);
+        Assertions.assertEquals(300,showRoom.getValueOfAllSalaries());
     }
 }
