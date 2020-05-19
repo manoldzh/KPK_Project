@@ -1,6 +1,6 @@
 package manolCard;
 
-public class TrialCard extends Card implements AddablePoints {
+public class TrialCard extends Card  {
     private static final int DEFAULT_POINTS = 5;
     private static final int UPPER_BOUND = 20;
     private static final int INCREASING_POINTS = 1;

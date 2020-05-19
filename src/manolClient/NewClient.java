@@ -16,6 +16,7 @@ public class NewClient extends Client {
     @Override
     public void buyCar(Car car){
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
+        getCard().addPoints();
     }
     public int calculateMinutesOfDriving(){
         int minutesOfDriving = getPoints() + ADDED_MINUTES;

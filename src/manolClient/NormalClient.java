@@ -24,6 +24,7 @@ public class NormalClient extends Client {
     @Override
     public void buyCar(Car car){
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
+        getCard().addPoints();
     }
     @Override
     public int calculateMinutesOfDriving(){

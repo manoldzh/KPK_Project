@@ -1,6 +1,6 @@
 package manolCard;
 
-public class VIPCard extends Card implements AddablePoints {
+public class VIPCard extends Card  {
     private static final int DEFAULT_POINTS = 30;
     private static final int UPPER_BOUND = 100;
     private static final int INCREASING_POINTS = 2;

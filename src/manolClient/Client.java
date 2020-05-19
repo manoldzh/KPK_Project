@@ -22,6 +22,9 @@ public abstract class Client implements Comparable<Client>  {
     public void setCard(Card card) {
         this.card = card;
     }
+    public Card getCard(){
+        return card;
+    }
     public int getIdOfCard(){
         return this.card.getId();
     }

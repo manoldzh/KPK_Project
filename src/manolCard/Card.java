@@ -1,12 +1,11 @@
 package manolCard;
 
-import manolCar.Car;
-
-public abstract class Card {
+public abstract class Card  {
     protected static int ID = 1;
     protected int points;
     public int id;
     abstract public void setPoints(int points);
+    abstract public void addPoints();
     public int getPoints(){
         return points;
     }
