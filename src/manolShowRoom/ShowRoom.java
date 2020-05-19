@@ -9,18 +9,18 @@ import manolEmployee.ComparatorOfEmployeesByName;
 import manolEmployee.ComparatorOfEmployeesBySoldCars;
 import manolEmployee.Employee;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ShowRoom {
     private List<Client> clients;
     private List<Car> cars;
     private List<Employee> employees;
+    private Map<Employee,Double> commissions;
     public ShowRoom(){
         clients = new ArrayList<Client>();
         cars = new ArrayList<Car>();
         employees = new ArrayList<Employee>();
+        commissions = new TreeMap<Employee,Double>()
     }
     public int getNumberOfCars(){
         return cars.size();
@@ -31,6 +31,16 @@ public class ShowRoom {
     public int getNumberOfEmployees(){
         return employees.size();
     }
+    public double getAllCommissions(){
+        double sumOfAllCommissions = 0;
+        Iterator iterator = commissions.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            sumOfAllCommissions = sumOfAllCommissions + (double)pair.getValue();
+        }
+        return sumOfAllCommissions;
+    }
+
     public boolean addClient(Client client){
         if(!clients.contains(client)) {
             clients.add(client);
@@ -48,6 +58,7 @@ public class ShowRoom {
     public boolean addEmployee(Employee employee){
         if(!employees.contains(employee)) {
             employees.add(employee);
+            commissions.put(employee,0);
             return true;
         }
         return false;
@@ -72,6 +83,7 @@ public class ShowRoom {
         int indexOfEmployee = employees.indexOf(employee);
         if(indexOfEmployee != -1){
             employees.remove(indexOfEmployee);
+            commissions.remove(employee);
             return true;
         }
         return false;
@@ -128,12 +140,26 @@ public class ShowRoom {
         }
         return  returnedEmployee;
     }
+    public double getEmployeeCommission(Employee employee){
+        return commissions.get(employee);
+    }
 
-    public boolean sellCarToClient(Car car, Client client){
-        if(!cars.contains(car) || clients.contains(client)){
+    public boolean sellCarToClient(Employee employee,Car car, Client client){
+        if(!cars.contains(car) || !clients.contains(client) || !employees.contains(employee)){
             return false;
         }
+        employee.sellCar(car,client);
+        double commissionUntilNow = commissions.get(employee);
+        double addedCommission = employee.calculateCommission(car, client);
+        commissions.replace(employee,commissionUntilNow + addedCommission);
         client.buyCar(car);
-
+        return true;
     }
+
+    public double payCommission(Employee employee){
+        double commission = commissions.get(employee);
+        commissions.replace(employee,0.0);
+        return commission;
+    }
+    
 }
