@@ -14,7 +14,7 @@ public class BMW extends Car {
         mPower = false;
     }
     /**
-     * Constructor of parameter for class Mercedes.
+     * Constructor with parameters for class Mercedes.
      * @param model This is the model of a BMW.
      * @param price  This is the price of a BMW.
      * @param VIN This is the VIN of a BMW.

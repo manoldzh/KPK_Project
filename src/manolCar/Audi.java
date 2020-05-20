@@ -14,7 +14,7 @@ public class Audi extends Car{
         allRoad = false;
     }
     /**
-     * Constructor of parameter for class Audi.
+     * Constructor with parameters for class Audi.
      * @param model This is the model of an Audi.
      * @param price  This is the price of an Audi.
      * @param VIN This is the VIN of an Audi.

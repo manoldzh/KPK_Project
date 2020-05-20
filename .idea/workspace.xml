@@ -4,10 +4,11 @@
     <list default="true" id="c22d5d5e-3900-42e5-9d18-3270c6b9eed3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/manolCar/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Audi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manolCar/BMW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/BMW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCar/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manolCar/Mercedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCar/Mercedes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCard/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCard/NormalCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/NormalCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCard/TrialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/TrialCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manolCard/VIPCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manolCard/VIPCard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,26 +36,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="groovy" value="1" />
-          <entry key="java" value="154" />
+          <entry key="java" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="154" />
+          <entry key="JAVA" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="23411" />
+          <entry key="java" value="24405" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="23411" />
+          <entry key="JAVA" value="24405" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -63,55 +64,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="340">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/manolCar/Mercedes.java">
+        <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="408">
+              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -156,10 +139,6 @@
         <option value="$PROJECT_DIR$/src/manolEmployee/JuniorSalesAssistant.java" />
         <option value="$PROJECT_DIR$/src/Test/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/manolClient/Client.java" />
-        <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
-        <option value="$PROJECT_DIR$/src/manolCard/NormalCard.java" />
-        <option value="$PROJECT_DIR$/src/manolCard/TrialCard.java" />
-        <option value="$PROJECT_DIR$/src/manolCard/VIPCard.java" />
         <option value="$PROJECT_DIR$/src/manolClient/NewClient.java" />
         <option value="$PROJECT_DIR$/src/manolClient/NormalClient.java" />
         <option value="$PROJECT_DIR$/src/manolClient/VIPClient.java" />
@@ -168,10 +147,14 @@
         <option value="$PROJECT_DIR$/src/Test/ShowRoomTest.java" />
         <option value="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java" />
         <option value="$PROJECT_DIR$/src/manolCar/Car.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/Audi.java" />
-        <option value="$PROJECT_DIR$/src/manolCar/BMW.java" />
         <option value="$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java" />
+        <option value="$PROJECT_DIR$/src/manolCard/Card.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/BMW.java" />
         <option value="$PROJECT_DIR$/src/manolCar/Mercedes.java" />
+        <option value="$PROJECT_DIR$/src/manolCar/Audi.java" />
+        <option value="$PROJECT_DIR$/src/manolCard/NormalCard.java" />
+        <option value="$PROJECT_DIR$/src/manolCard/TrialCard.java" />
+        <option value="$PROJECT_DIR$/src/manolCard/VIPCard.java" />
       </list>
     </option>
   </component>
@@ -570,34 +553,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCard/AddablePoints.java" />
-    <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolClient/NewClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -647,34 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByPrice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -682,10 +609,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/ComparatorOfCarsByBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCard/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/manolCar/Mercedes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/Audi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/BMW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCar/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCard/NormalCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCard/TrialCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manolCard/VIPCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
         </state>
       </provider>
     </entry>
