@@ -76,7 +76,7 @@ public abstract class Car {
     public abstract String drive();
     /**
      * This method is used to get the VIN of a Car.
-     * @return String This returns the VIN of a Car..
+     * @return String This returns the VIN of a Car.
      */
     public String getVIN(){
         return  VIN;

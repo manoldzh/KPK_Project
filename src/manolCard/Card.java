@@ -1,5 +1,5 @@
 package manolCard;
-/** Represents a Car.
+/** Represents a Card.
  * @author Manol Dzhambazov
  * @version 1.0
  * @since 31.05.2020
