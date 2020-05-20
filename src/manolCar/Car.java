@@ -38,7 +38,7 @@ public abstract class Car {
         return  model;
     }
     /**
-     * Default constructor of a Car.
+     * Default constructor for class Car.
      */
     public Car(){
         brand = "default";
@@ -47,7 +47,7 @@ public abstract class Car {
         VIN = "default";
     }
     /**
-     * Constructor of a Car with only one parameter.
+     * Constructor for class Car with only one parameter.
      * @param String This is the brand of a Car.
      */
     public Car(String brand){
@@ -57,7 +57,7 @@ public abstract class Car {
         VIN = "default";
     }
     /**
-     * Constructor with parameters of a Car.
+     * Constructor with parameters for class Car.
      * @param String This is the brand of a Car.
      * @param String This is the model of a Cat.
      * @param int This is the price of a Car.
@@ -72,7 +72,7 @@ public abstract class Car {
     public abstract String drive();
     /**
      * This method is used to get the VIN of a Car.
-     * @return String This is the VIN of a Car..
+     * @return String This returns the VIN of a Car..
      */
     public String getVIN(){
         return  VIN;
