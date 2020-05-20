@@ -1,5 +1,9 @@
 package manolCar;
-
+/** Represents a Car.
+ * @author Manol Dzhambazov
+ * @version 1.0
+ * @since 31.05.2020
+ */
 public abstract class Car {
     private String brand;
     private String model;
@@ -48,7 +52,7 @@ public abstract class Car {
     }
     /**
      * Constructor for class Car with only one parameter.
-     * @param String This is the brand of a Car.
+     * @param brand This is the brand of a Car.
      */
     public Car(String brand){
         this.brand = brand;
@@ -58,10 +62,10 @@ public abstract class Car {
     }
     /**
      * Constructor with parameters for class Car.
-     * @param String This is the brand of a Car.
-     * @param String This is the model of a Cat.
-     * @param int This is the price of a Car.
-     * @param String This is the VIN of a Car.
+     * @param brand This is the brand of a Car.
+     * @param model This is the model of a Cat.
+     * @param price This is the price of a Car.
+     * @param VIN This is the VIN of a Car.
      */
     public Car(String brand, String model, int price, String VIN){
         this.brand = brand;
@@ -81,7 +85,7 @@ public abstract class Car {
      * This method is used to check whether two cars are equal.
      * It overrides the equals method of Object and returns true only if
      * two cars have the same VIN.
-     * @param Object This is the object with which we check whether this is equal.
+     * @param c This is the object with which we check whether this is equal.
      * @return boolean This returns whether the two Cars are equal.
      * @see "equals methos in the class Object."
      */

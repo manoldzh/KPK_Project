@@ -1,5 +1,9 @@
 package manolCar;
-
+/** Represents an Audi.
+ * @author Manol Dzhambazov
+ * @version 1.0
+ * @since 31.05.2020
+ */
 public class Audi extends Car{
     private boolean allRoad;
     /**
@@ -11,10 +15,10 @@ public class Audi extends Car{
     }
     /**
      * Constructor of parameter for class Audi.
-     * @param String This is the model of an Audi.
-     * @param int  This is the price of an Audi.
-     * @param String This is the VIN of an Audi.
-     * @param boolean This shows whether an Audi is allroad.
+     * @param model This is the model of an Audi.
+     * @param price  This is the price of an Audi.
+     * @param VIN This is the VIN of an Audi.
+     * @param allRoad This shows whether an Audi is allroad.
      */
     public Audi(String model, int price, String VIN, boolean allRoad){
         super("Audi",model,price,VIN);

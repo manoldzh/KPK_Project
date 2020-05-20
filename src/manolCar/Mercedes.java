@@ -1,5 +1,9 @@
 package manolCar;
-
+/** Represents a Mercedes.
+ * @author Manol Dzhambazov
+ * @version 1.0
+ * @since 31.05.2020
+ */
 public class Mercedes extends Car {
     private boolean fourMatic;
     /**
@@ -12,10 +16,10 @@ public class Mercedes extends Car {
 
     /**
      * Constructor of parameter for class Mercedes.
-     * @param String This is the model of a BMW.
-     * @param int  This is the price of a BMW.
-     * @param String This is the VIN of a BMW.
-     * @param boolean This shows whether a Mercedes has FourMatic.
+     * @param model This is the model of a BMW.
+     * @param price  This is the price of a BMW.
+     * @param VIN This is the VIN of a BMW.
+     * @param fourMatic This shows whether a Mercedes has FourMatic.
      */
     public Mercedes(String model, int price, String VIN, boolean fourMatic){
         super("Mercedes", model, price, VIN);

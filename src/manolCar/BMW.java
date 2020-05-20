@@ -1,5 +1,9 @@
 package manolCar;
-
+/** Represents a BMW.
+ * @author Manol Dzhambazov
+ * @version 1.0
+ * @since 31.05.2020
+ */
 public class BMW extends Car {
     private boolean mPower;
     /**
@@ -11,10 +15,10 @@ public class BMW extends Car {
     }
     /**
      * Constructor of parameter for class Mercedes.
-     * @param String This is the model of a BMW.
-     * @param int  This is the price of a BMW.
-     * @param String This is the VIN of a BMW.
-     * @param boolean This shows whether a BMW has mPower.
+     * @param model This is the model of a BMW.
+     * @param price  This is the price of a BMW.
+     * @param VIN This is the VIN of a BMW.
+     * @param mPower This shows whether a BMW has mPower.
      */
     public BMW(String model, int price, String VIN, boolean mPower){
         super("BMW", model, price, VIN);
