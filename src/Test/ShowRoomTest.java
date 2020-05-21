@@ -209,7 +209,7 @@ public class ShowRoomTest {
         Client client2 = new NormalClient("georgi", "georgiev");
         showRoom.addClient(client1);
         showRoom.addClient(client2);
-        showRoom.sortClientsAlphabetacally();
+        showRoom.sortClientsAlphabetically();
         Assertions.assertEquals("ivan ivanov", showRoom.getClientByIndex(1).toString());
     }
     @Test

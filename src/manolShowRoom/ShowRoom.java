@@ -235,7 +235,7 @@ public class ShowRoom {
     /**
      * This method is used to sort the clients by alphabetically.
      */
-    public void sortClientsAlphabetacally(){
+    public void sortClientsAlphabetically(){
         Collections.sort(clients);
     }
     /**
