@@ -88,7 +88,7 @@ public abstract class Client implements Comparable<Client>  {
      * It overrides the equals method of Object and returns true only if
      * two Clients have same name and surname.
      * @param c This is the object with which we check whether this is equal.
-     * @return boolean This returns whether the two CLients are equal.
+     * @return boolean This returns whether the two Clients are equal.
      * @see "equals methos in the class Object."
      */
     @Override

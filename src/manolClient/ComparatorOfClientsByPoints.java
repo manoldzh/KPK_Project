@@ -8,7 +8,8 @@ import java.util.Comparator;
  */
 public class ComparatorOfClientsByPoints <T extends Client>implements Comparator<T> {
     /**
-     * This method is used to compare two cars by brand and if they have same brand compare their models.
+     * This method is used to compare two clients by points and if they have same number of points compare
+     * String which toString method returns of the two clients.
      * @param firstClient This is the first Client.
      * @param secondClient  This is the second Client.
      * @return int This returns the result of comparing two ints(Points of the clients) with method compareTo
