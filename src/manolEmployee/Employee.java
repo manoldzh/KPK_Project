@@ -12,6 +12,7 @@ public abstract class Employee {
     private String surname;
     private int salary;
     private int soldCars;
+
     /**
      * Default constructor for class Employee.
      */
@@ -33,6 +34,7 @@ public abstract class Employee {
         this.salary = salary;
         soldCars = 0;
     }
+
     /**
      * This method is used to get the salary of an Employee.
      * @return int This is the salary of an Employee.
@@ -47,6 +49,7 @@ public abstract class Employee {
     public int getSoldCars(){
         return soldCars;
     }
+
     /**
      * This method is used to override the toString method of an
      * Object and presents the Employee as a string which contains
@@ -69,8 +72,6 @@ public abstract class Employee {
         soldCars ++;
     }
 
-    abstract public double calculateCommission(Car car, Client client);
-    abstract public double calculateAddedPercents();
     /**
      * This method is used to check whether two Employees are equal.
      * It overrides the equals method of Object and returns true only if
@@ -95,4 +96,7 @@ public abstract class Employee {
         }
         return false;
     }
+
+    abstract public double calculateCommission(Car car, Client client);
+    abstract public double calculateAddedPercents();
 }

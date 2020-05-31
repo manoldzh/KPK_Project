@@ -114,7 +114,7 @@ public class ShowRoomTest {
         Employee employee2 = new SeniorSalesAssistant("georgi","georgiev",300);
         showRoom.addEmployee(employee1);
         showRoom.addEmployee(employee2);
-        Employee indexedEmployee = showRoom.getEmlpoyeeByIndex(1);
+        Employee indexedEmployee = showRoom.getEmployeeByIndex(1);
         Assertions.assertEquals(employee2,indexedEmployee);
     }
     @Test
@@ -124,7 +124,7 @@ public class ShowRoomTest {
         Employee employee2 = new SeniorSalesAssistant("georgi","georgiev",300);
         showRoom.addEmployee(employee1);
         showRoom.addEmployee(employee2);
-        Employee indexedEmployee = showRoom.getEmlpoyeeByIndex(-1);
+        Employee indexedEmployee = showRoom.getEmployeeByIndex(-1);
         Assertions.assertEquals(null,indexedEmployee);
     }
     @Test
@@ -244,7 +244,7 @@ public class ShowRoomTest {
         showRoom.addEmployee(employee1);
         showRoom.addEmployee(employee2);
         showRoom.sortEmployeesByName();
-        Assertions.assertEquals("georgi georgiev",showRoom.getEmlpoyeeByIndex(0).toString());
+        Assertions.assertEquals("georgi georgiev",showRoom.getEmployeeByIndex(0).toString());
     }
     @Test
     public void testSortEmployeesBySoldCars(){
@@ -267,7 +267,7 @@ public class ShowRoomTest {
         showRoom.sellCarToClient(employee1,car2,client2);
         showRoom.sellCarToClient(employee2,car3,client1);
         showRoom.sortEmployeesBySoldCars();
-        Assertions.assertEquals("georgi georgiev",showRoom.getEmlpoyeeByIndex(0).toString());
+        Assertions.assertEquals("georgi georgiev",showRoom.getEmployeeByIndex(0).toString());
     }
 
     @Test

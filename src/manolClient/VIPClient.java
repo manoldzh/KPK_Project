@@ -55,7 +55,7 @@ public class VIPClient extends Client {
      * points of the client + {@value manolClient.VIPClient#ADDED_MINUTES}.
      * @return int This is the minutes of driving of this client.
      */
-    
+
     @Override
     public int calculateMinutesOfDriving(){
         int minutesOfDriving = getPoints() + ADDED_MINUTES;

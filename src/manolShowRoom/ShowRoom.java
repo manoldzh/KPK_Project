@@ -21,6 +21,7 @@ public class ShowRoom {
     private List<Employee> employees;
     private Map<Employee,Double> commissions;
     private Map<Car,Boolean> availabilityOfCars;
+
     /**
      * Default constructor for class ShowRoom.
      */
@@ -31,6 +32,7 @@ public class ShowRoom {
         commissions = new HashMap<Employee,Double>();
         availabilityOfCars = new HashMap<Car, Boolean>();
     }
+
     /**
      * This method is used to get the numbers of cars in ShowRoom.
      * @return int This is the number of cars in ShowRoom.
@@ -52,6 +54,7 @@ public class ShowRoom {
     public int getNumberOfEmployees(){
         return employees.size();
     }
+
     /**
      * This method is used to get the value of all commissions which are not paid in ShowRoom.
      * @return int This is the value of all commissions in ShowRoom.
@@ -65,6 +68,7 @@ public class ShowRoom {
         }
         return sumOfAllCommissions;
     }
+
     /**
      * This method is used to get the a client in ShowRoom by index.
      * @param index This is the index of a client.
@@ -98,7 +102,7 @@ public class ShowRoom {
      * @param index This is the index of an employee.
      * @return Employee This is the employee if index is not out of bound otherwise it is null.
      */
-    public Employee getEmlpoyeeByIndex(int index){
+    public Employee getEmployeeByIndex(int index){
         Employee returnedEmployee;
         try{
             returnedEmployee = employees.get(index);
@@ -142,7 +146,30 @@ public class ShowRoom {
     public int getNumberOfAllAvailableCarsForDriving(){
         return getAllAvailableCarsForDriving().size();
     }
-
+    /**
+     * This method is used to get the value of all salaries of the employees.
+     * @return int This is the value of all salaries of the employees.
+     */
+    public int getValueOfAllSalaries(){
+        int sumOfSalaries = 0;
+        for(int i =0; i<employees.size();i++){
+            sumOfSalaries+=employees.get(i).getSalary();
+        }
+        return  sumOfSalaries;
+    }
+    /**
+     * This method is used to get the value of all commissions of the employees.
+     * @return double This is the value of all commissions.
+     */
+    public double getValueOfAllCommissions(){
+        double sumOfCommissions = 0;
+        Iterator iterator = commissions.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            sumOfCommissions += commissions.get((Employee) pair.getKey());
+        }
+        return sumOfCommissions;
+    }
 
     /**
      * This method is used to add new Client in the Showroom if it does not exist already.
@@ -346,32 +373,6 @@ public class ShowRoom {
         while (iterator.hasNext()) {
             Map.Entry pair = (Map.Entry)iterator.next();
             sumOfCommissions += payCommissionOfEmployee((Employee) pair.getKey());
-        }
-        return sumOfCommissions;
-    }
-
-    /**
-     * This method is used to get the value of all salaries of the employees.
-     * @return int This is the value of all salaries of the employees.
-     */
-    public int getValueOfAllSalaries(){
-        int sumOfSalaries = 0;
-        for(int i =0; i<employees.size();i++){
-            sumOfSalaries+=employees.get(i).getSalary();
-        }
-        return  sumOfSalaries;
-    }
-
-    /**
-     * This method is used to get the value of all commissions of the employees.
-     * @return double This is the value of all commissions.
-     */
-    public double getValueOfAllCommissions(){
-        double sumOfCommissions = 0;
-        Iterator iterator = commissions.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry pair = (Map.Entry)iterator.next();
-            sumOfCommissions += commissions.get((Employee) pair.getKey());
         }
         return sumOfCommissions;
     }

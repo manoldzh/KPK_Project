@@ -10,6 +10,7 @@ import manolClient.Client;
 public class JuniorSalesAssistant extends Employee {
     final static double PERCENT_OF_COMMISSION = 0.005;
     final static double DIVIDER_OF_SOLD_CARS = 5000;
+
     /**
      * Default constructor for class JuniorSalesAssistant which call the default constructor of class Employee.
      *      * @see "Employee() of class Employee"

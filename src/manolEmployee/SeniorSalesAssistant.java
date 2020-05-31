@@ -10,6 +10,7 @@ import manolClient.Client;
 public class SeniorSalesAssistant extends Employee {
     final static double PERCENT_OF_COMMISSION = 0.007;
     final static double DIVIDER_OF_SOLD_CARS = 2000;
+
     /**
      * Default constructor for class SeniorSalesAssistant which call the default constructor of class Employee.
      * @see "Employee() of class Employee"
@@ -26,6 +27,7 @@ public class SeniorSalesAssistant extends Employee {
     public SeniorSalesAssistant(String name, String surname, int salary){
         super(name, surname, salary);
     }
+
     /**
      * This method is used to calculate the added percents to the percents of the commission
      * by formula (number of sold cars)/ {@value manolEmployee.SeniorSalesAssistant#DIVIDER_OF_SOLD_CARS}.
@@ -36,6 +38,7 @@ public class SeniorSalesAssistant extends Employee {
         double addedPercents = getSoldCars()/DIVIDER_OF_SOLD_CARS;
         return addedPercents;
     }
+
     /**
      * This method is used to calculate the value of the commission when the JuniorSalesAssistant sell a car
      * to a client by the formula
