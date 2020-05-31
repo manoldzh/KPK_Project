@@ -9,16 +9,46 @@ public abstract class Car {
     private String model;
     private int price;
     private String VIN; // VIN is unique for every car
+
     /**
-     * This method is used to override the toString method of an
-     * Object and presents the car as a string which contains
-     * the brand, space, the model, " with VIN: ", the VIN, " and price: ", the price.
-     * @return String This returns car represented as a String.
-     * @see "toString method of class Object."
+     * Default constructor for class Car.
      */
-    @Override
-    public String toString(){
-        return brand + " " + model + " with VIN: " + VIN + " and price: " + price;
+    public Car(){
+        brand = "default";
+        model = "default";
+        price = 0;
+        VIN = "default";
+    }
+    /**
+     * Constructor with parameters for class Car.
+     * @param brand This is the brand of a Car.
+     * @param model This is the model of a Cat.
+     * @param price This is the price of a Car.
+     * @param VIN This is the VIN of a Car.
+     */
+    public Car(String brand, String model, int price, String VIN){
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+        this.VIN = VIN;
+    }
+    /**
+     * Constructor for class Car with only one parameter.
+     * @param brand This is the brand of a Car.
+     */
+    public Car(String brand){
+        this.brand = brand;
+        model = "default";
+        price = 0;
+        VIN = "default";
+    }
+
+    /**
+     * This method is used to get the VIN of a Car.
+     * @return String This returns the VIN of a Car.
+     */
+    public String getVIN(){
+        return  VIN;
     }
     /**
      * This method is used to get the brand of a Car.
@@ -41,45 +71,17 @@ public abstract class Car {
     public String getModel(){
         return  model;
     }
+
     /**
-     * Default constructor for class Car.
+     * This method is used to override the toString method of an
+     * Object and presents the car as a string which contains
+     * the brand, space, the model, " with VIN: ", the VIN, " and price: ", the price.
+     * @return String This returns car represented as a String.
+     * @see "toString method of class Object."
      */
-    public Car(){
-        brand = "default";
-        model = "default";
-        price = 0;
-        VIN = "default";
-    }
-    /**
-     * Constructor for class Car with only one parameter.
-     * @param brand This is the brand of a Car.
-     */
-    public Car(String brand){
-        this.brand = brand;
-        model = "default";
-        price = 0;
-        VIN = "default";
-    }
-    /**
-     * Constructor with parameters for class Car.
-     * @param brand This is the brand of a Car.
-     * @param model This is the model of a Cat.
-     * @param price This is the price of a Car.
-     * @param VIN This is the VIN of a Car.
-     */
-    public Car(String brand, String model, int price, String VIN){
-        this.brand = brand;
-        this.model = model;
-        this.price = price;
-        this.VIN = VIN;
-    }
-    public abstract String drive();
-    /**
-     * This method is used to get the VIN of a Car.
-     * @return String This returns the VIN of a Car.
-     */
-    public String getVIN(){
-        return  VIN;
+    @Override
+    public String toString(){
+        return brand + " " + model + " with VIN: " + VIN + " and price: " + price;
     }
     /**
      * This method is used to check whether two cars are equal.
@@ -105,4 +107,8 @@ public abstract class Car {
         }
         return false;
     }
+
+
+    public abstract String drive();
+
 }

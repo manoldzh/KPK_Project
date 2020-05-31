@@ -9,6 +9,7 @@ public class NormalCard extends Card  {
     private static final int DEFAULT_POINTS = 20;
     private static final int UPPER_BOUND = 40;
     private static final int INCREASING_POINTS = 1;
+
     /**
      * Default constructor for class NormalCard.
      */
@@ -34,15 +35,7 @@ public class NormalCard extends Card  {
         id = Card.ID++;
         points = card.points;
     }
-    /**
-     * This method is used to add {@value manolCard.NormalCard#INCREASING_POINTS} of points. It use setPoints().
-     * @see "setPoints() in class NormalCard"
-     */
-    @Override
-    public void addPoints() {
-        int temporaryPoints = points + INCREASING_POINTS;
-        setPoints(temporaryPoints);
-    }
+
     /**
      * This method is used to set points of a NormalCard.
      * But if they are more than {@value manolCard.NormalCard#UPPER_BOUND} or less than 0,
@@ -62,4 +55,13 @@ public class NormalCard extends Card  {
         }
     }
 
+    /**
+     * This method is used to add {@value manolCard.NormalCard#INCREASING_POINTS} of points. It use setPoints().
+     * @see "setPoints() in class NormalCard"
+     */
+    @Override
+    public void addPoints() {
+        int temporaryPoints = points + INCREASING_POINTS;
+        setPoints(temporaryPoints);
+    }
 }

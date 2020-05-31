@@ -7,6 +7,7 @@ public class VIPClient extends Client {
     final static int ADDED_PERCENTAGE_OF_DISCOUNT  = 10;
     final static int  DIVIDER_OF_POINTS = 30;
     final static int ADDED_MINUTES = 20;
+
     /**
      * Constructor with parameters for class VIPClient. It sets card to a card created by
      * Default Constructor of VIPCard
@@ -17,6 +18,7 @@ public class VIPClient extends Client {
         super(name,surname);
         setCard(new VIPCard());
     }
+
     /**
      * This method calculate the discount which this client has for buying cars
      * by formula: {@value manolClient.VIPClient#ADDED_PERCENTAGE_OF_DISCOUNT} +
@@ -38,6 +40,7 @@ public class VIPClient extends Client {
         double priceForThisClient = car.getPrice() * ( 100 - calculateDiscount())/100;
         return priceForThisClient;
     }
+
     /**
      * This methos is used when a Client buy a Car and it adds points to the Client's Card.
      * @param car This is the which the client will buy.
@@ -52,6 +55,7 @@ public class VIPClient extends Client {
      * points of the client + {@value manolClient.VIPClient#ADDED_MINUTES}.
      * @return int This is the minutes of driving of this client.
      */
+    
     @Override
     public int calculateMinutesOfDriving(){
         int minutesOfDriving = getPoints() + ADDED_MINUTES;

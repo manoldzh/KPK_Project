@@ -24,6 +24,7 @@ public class BMW extends Car {
         super("BMW", model, price, VIN);
         this.mPower = mPower;
     }
+
     /**
      * This method is used to override the toString method of an
      * Object and presents the Audi as a string same as toString method of Car
@@ -39,6 +40,7 @@ public class BMW extends Car {
         }
         return super.toString();
     }
+
     /**
      * This method is used to show that a BMW is driven.
      * @return String This returns a "Driving pleasure...\n"

@@ -13,7 +13,6 @@ public class Mercedes extends Car {
         super("Mercedes");
         fourMatic = false;
     }
-
     /**
      * Constructor with parameters for class Mercedes.
      * @param model This is the model of a BMW.
@@ -25,6 +24,7 @@ public class Mercedes extends Car {
         super("Mercedes", model, price, VIN);
         this.fourMatic = fourMatic;
     }
+
     /**
      * This method is used to override the toString method of an
      * Object and presents the Mercedes as a string same as toString method of Car
@@ -46,6 +46,7 @@ public class Mercedes extends Car {
      * and "You can feel the power of FourMatic..." if the Mercedes attribute
      * allRoad is true
      */
+
     @Override
     public String drive(){
         String result = new String();

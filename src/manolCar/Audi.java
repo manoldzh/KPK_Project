@@ -24,6 +24,7 @@ public class Audi extends Car{
         super("Audi",model,price,VIN);
         this.allRoad = allRoad;
     }
+
     /**
      * This method is used to override the toString method of an
      * Object and presents the Audi as a string same as toString method of Car
@@ -39,6 +40,7 @@ public class Audi extends Car{
         }
         return super.toString();
     }
+
     /**
      * This method is used to show that an Audi is driven.
      * @return String This returns a "Lead by technology...\n"

@@ -8,6 +8,7 @@ public class TrialCard extends Card  {
     private static final int DEFAULT_POINTS = 5;
     private static final int UPPER_BOUND = 20;
     private static final int INCREASING_POINTS = 1;
+
     /**
      * Default constructor for class TrialCard.
      */
@@ -33,15 +34,7 @@ public class TrialCard extends Card  {
         id = Card.ID++;
         points = card.getPoints();
     }
-    /**
-     * This method is used to add {@value manolCard.TrialCard#INCREASING_POINTS} of points. It use setPoints().
-     * @see "setPoints() in class TrialCard"
-     */
-    @Override
-    public void addPoints(){
-        int temporaryPoints = points + INCREASING_POINTS;
-        setPoints(temporaryPoints);
-    }
+
     /**
      * This method is used to set points of a TrialCard.
      * But if they are more than {@value manolCard.TrialCard#UPPER_BOUND} or less than 0,
@@ -61,4 +54,13 @@ public class TrialCard extends Card  {
         }
     }
 
+    /**
+     * This method is used to add {@value manolCard.TrialCard#INCREASING_POINTS} of points. It use setPoints().
+     * @see "setPoints() in class TrialCard"
+     */
+    @Override
+    public void addPoints(){
+        int temporaryPoints = points + INCREASING_POINTS;
+        setPoints(temporaryPoints);
+    }
 }

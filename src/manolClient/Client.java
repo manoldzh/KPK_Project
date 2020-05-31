@@ -11,6 +11,7 @@ public abstract class Client implements Comparable<Client>  {
     private String name;
     private String surname;
     private Card card;
+
     /**
      * Default constructor for class Client.
      */
@@ -27,10 +28,8 @@ public abstract class Client implements Comparable<Client>  {
         this.name = name;
         this.surname = surname;
     }
-    public abstract void buyCar(Car car);
-    public abstract void drive (Car car);
-    public abstract double calculatePriceForCar(Car car);
-    public abstract int calculateMinutesOfDriving();
+
+
 
     /**
      * This method is used to set the Cars of this Client to another Card.
@@ -39,6 +38,7 @@ public abstract class Client implements Comparable<Client>  {
     public void setCard(Card card) {
         this.card = card;
     }
+
     /**
      * This method is used to get the Card of a Client.
      * @return Card This returns the Card of a Client.
@@ -54,6 +54,14 @@ public abstract class Client implements Comparable<Client>  {
         return this.card.getId();
     }
     /**
+     * This method is used to get the points of a Card of a Car.
+     * @return int This returns the points of a Card of a Car..
+     */
+    public int getPoints(){
+        return card.getPoints();
+    }
+
+    /**
      * This method is used to override the toString method of an
      * Object and presents the Client as a string which contains
      * the name, space, the surname.
@@ -64,6 +72,7 @@ public abstract class Client implements Comparable<Client>  {
     public String toString(){
         return name + " " + surname;
     }
+
     /**
      * This method is used to override the compareTo method of an
      * Object and use compareTo method of String for toString method of
@@ -76,13 +85,7 @@ public abstract class Client implements Comparable<Client>  {
     public int compareTo(Client otherClient){
         return this.toString().compareTo(otherClient.toString());
     }
-    /**
-     * This method is used to get the points of a Card of a Car.
-     * @return int This returns the points of a Card of a Car..
-     */
-    public int getPoints(){
-        return card.getPoints();
-    }
+
     /**
      * This method is used to check whether two Clients are equal.
      * It overrides the equals method of Object and returns true only if
@@ -107,4 +110,9 @@ public abstract class Client implements Comparable<Client>  {
         }
         return false;
     }
+
+    public abstract void buyCar(Car car);
+    public abstract void drive (Car car);
+    public abstract double calculatePriceForCar(Car car);
+    public abstract int calculateMinutesOfDriving();
 }

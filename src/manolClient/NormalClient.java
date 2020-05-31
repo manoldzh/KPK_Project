@@ -7,6 +7,7 @@ public class NormalClient extends Client {
     final static int ADDED_PERCENTAGE_OF_DISCOUNT  = 7;
     final static int  DIVIDER_OF_POINTS = 20;
     final static int ADDED_MINUTES = 15;
+
     /**
      * Constructor with parameters for class NormalClient. It sets card to a card created by
      * Default Constructor of NormalCard
@@ -39,6 +40,7 @@ public class NormalClient extends Client {
         double priceForCar = car.getPrice()*( 100 - calculateDiscount())/100;
         return priceForCar;
     }
+
     /**
      * This methos is used when a Client buy a Car and it adds points to the Client's Card.
      * @param car This is the car which the Client will buy.
@@ -48,6 +50,7 @@ public class NormalClient extends Client {
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
         getCard().addPoints();
     }
+
     /**
      * This method is used to calculate how many minutes can a Client drive by formula
      * points of the client + {@value manolClient.NormalClient#ADDED_MINUTES}.

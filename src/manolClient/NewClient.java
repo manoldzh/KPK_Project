@@ -36,6 +36,7 @@ public class NewClient extends Client {
         System.out.print( toString() + " buy " + car.toString() + " for " + calculatePriceForCar(car));
         getCard().addPoints();
     }
+
     /**
      * This method is used to calculate how many minutes can a Client drive by formula
      * points of the client + {@value manolClient.NewClient#ADDED_MINUTES}.

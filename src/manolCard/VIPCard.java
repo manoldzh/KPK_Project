@@ -8,6 +8,7 @@ public class VIPCard extends Card  {
     private static final int DEFAULT_POINTS = 30;
     private static final int UPPER_BOUND = 100;
     private static final int INCREASING_POINTS = 2;
+
     /**
      * Default constructor for class VIPCard.
      */
@@ -33,15 +34,7 @@ public class VIPCard extends Card  {
         id = Card.ID++;
         points = card.getPoints();
     }
-    /**
-     * This method is used to add {@value manolCard.VIPCard#INCREASING_POINTS} of points. It use setPoints().
-     * @see "setPoints() in class VIPCard"
-     */
-    @Override
-    public void addPoints(){
-        int temporaryPoints = points + INCREASING_POINTS;
-        setPoints(temporaryPoints);
-    }
+
     /**
      * This method is used to set points of a VIPCard.
      * But if they are more than {@value manolCard.VIPCard#UPPER_BOUND} or less than 0,
@@ -61,4 +54,13 @@ public class VIPCard extends Card  {
         }
     }
 
+    /**
+     * This method is used to add {@value manolCard.VIPCard#INCREASING_POINTS} of points. It use setPoints().
+     * @see "setPoints() in class VIPCard"
+     */
+    @Override
+    public void addPoints(){
+        int temporaryPoints = points + INCREASING_POINTS;
+        setPoints(temporaryPoints);
+    }
 }
