@@ -19,7 +19,6 @@ public class CardTest {
     public void testTheValueOfIdOfTheSecondCard(){
         Card card1 = new TrialCard();
         Card card2 = new VIPCard();
-
         Assertions.assertEquals(2,card2.getId());
     }
     @Test
