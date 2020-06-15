@@ -13,7 +13,7 @@ public class JuniorSalesAssistant extends Employee {
 
     /**
      * Default constructor for class JuniorSalesAssistant which call the default constructor of class Employee.
-     *      * @see "Employee() of class Employee"
+     * @see "Employee() of class Employee"
      */
     public JuniorSalesAssistant(){
         super();
